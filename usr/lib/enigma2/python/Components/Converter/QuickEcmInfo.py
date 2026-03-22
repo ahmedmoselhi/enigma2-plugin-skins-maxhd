@@ -3,7 +3,7 @@
 #    <convert type="QuickEcmInfo">ecmfile | emuname | caids</convert>
 #  </widget>
 
-from Poll import Poll
+from .Poll import Poll
 from Components.Converter.Converter import Converter
 from enigma import eTimer, iPlayableService, iServiceInformation, eServiceReference, iServiceKeys, getDesktop
 from Components.ConfigList import ConfigListScreen
@@ -12,7 +12,7 @@ from Components.Element import cached
 from Tools.Directories import fileExists
 import os
 try:
-	from bitratecalc import eBitrateCalculator
+	from .bitratecalc import eBitrateCalculator
 except:
 	pass
 

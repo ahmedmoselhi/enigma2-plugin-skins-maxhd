@@ -30,7 +30,7 @@ class ServiceOrbitalPosition2(Converter, object):
 				return _("Stream")
 			if refString.startswith("1:134:"):
 				return _("Altern")
-		if transponder_info and "orbital_position" in transponder_info.keys():
+		if transponder_info and "orbital_position" in list(transponder_info.keys()):
 			pos = int(transponder_info["orbital_position"])
 			direction = 'E'
 			if pos > 1800:

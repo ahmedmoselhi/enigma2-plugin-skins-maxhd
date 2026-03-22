@@ -11,7 +11,7 @@ from Tools.Directories import fileExists, resolveFilename
 from os import environ, listdir, remove, rename, system 
 from Components.ServiceEventTracker import ServiceEventTracker 
 import gettext
-from Poll import Poll
+from .Poll import Poll
 
 class ExtremInfo(Poll, Converter,
  object):
@@ -975,8 +975,8 @@ class ExtremInfo(Poll, Converter,
 
 
     def getCamName(self):
-	self.poll_interval = 2000
-	self.poll_enabled = True         
+        self.poll_interval = 2000
+        self.poll_enabled = True         
         emu = ""
         cs = ""
         try:
@@ -1024,122 +1024,122 @@ class ExtremInfo(Poll, Converter,
 
 
     def getEcmCamInfo(self):
-	    textvalue = "No info from emu or FTA"
-	    service = self.source.service
-	    if service:
-		    info = service and service.info()
-		    if info:
-			    if info.getInfoObject(iServiceInformation.sCAIDs):
-				    ecm_info = self.ecmfile()
-				    if ecm_info:
-					    # caid
-					    caid = ecm_info.get("caid", "")
-					    caid = caid.lstrip("0x")
-					    caid = caid.upper()
-					    caid = caid.zfill(4)
-					    caid = "CAID: %s" % caid
-					    # Provider wicardd
-					    provider = ecm_info.get("Provider", "")
-					    provider = provider.lstrip("0x")
-					    provider = provider.upper()
-					    provider = provider.zfill(6)
-					    provider = "Prov: %s" % provider
-					
-					    # hops
-					    reader = ecm_info.get("reader", None)
+            textvalue = "No info from emu or FTA"
+            service = self.source.service
+            if service:
+                    info = service and service.info()
+                    if info:
+                            if info.getInfoObject(iServiceInformation.sCAIDs):
+                                    ecm_info = self.ecmfile()
+                                    if ecm_info:
+                                            # caid
+                                            caid = ecm_info.get("caid", "")
+                                            caid = caid.lstrip("0x")
+                                            caid = caid.upper()
+                                            caid = caid.zfill(4)
+                                            caid = "CAID: %s" % caid
+                                            # Provider wicardd
+                                            provider = ecm_info.get("Provider", "")
+                                            provider = provider.lstrip("0x")
+                                            provider = provider.upper()
+                                            provider = provider.zfill(6)
+                                            provider = "Prov: %s" % provider
+                                        
+                                            # hops
+                                            reader = ecm_info.get("reader", None)
                                             reader = "%s" % reader
                                             # oscam
-					    prov = ecm_info.get("prov", "")
-					    prov = prov.lstrip("0x")
-					    prov = prov.upper()
-					    prov = prov.zfill(6)
-					    prov = "%s" % prov                                                
-					    from2 = ecm_info.get("from", None)
+                                            prov = ecm_info.get("prov", "")
+                                            prov = prov.lstrip("0x")
+                                            prov = prov.upper()
+                                            prov = prov.zfill(6)
+                                            prov = "%s" % prov                                                
+                                            from2 = ecm_info.get("from", None)
                                             from2 = "%s" % from2                                               
-					    # ecm time	
-					    ecm_time = ecm_info.get("ecm time", None)
-					    if ecm_time:
-						    if "msec" in ecm_time:
-							    ecm_time = "0.%s" % ecm_time						
-						    else:
-							    ecm_time = "%s s" % ecm_time
-					    # address
-					    address = ecm_info.get("address", "")								
-					    # source	
-					    using = ecm_info.get("using", "")
-					    if using:
-						    if using == "emu":
-							    textvalue = "(EMU) %s - %s" % (caid, ecm_time)
-						    elif using == "CCcam-s2s":
-							    textvalue = "(NET) %s - %s - %s - %s" % (caid, address, reader, ecm_time)							
-						    else:
-							    textvalue = "%s - %s - READER: %s - %s" % (caid, address, reader, ecm_time)		
-					    else:
-						    # mgcamd
-						    source = ecm_info.get("source", None)
-						    if source:
-							    if source == "emu":
-								    textvalue = "Source:EMU %s" % (caid)
-							    else:	
-								    textvalue = "%s - %s - %s" % (caid, source, ecm_time)
-						    # oscam
-						    oscsource = ecm_info.get("reader", None)
-						    if oscsource:
+                                            # ecm time  
+                                            ecm_time = ecm_info.get("ecm time", None)
+                                            if ecm_time:
+                                                    if "msec" in ecm_time:
+                                                            ecm_time = "0.%s" % ecm_time                                                
+                                                    else:
+                                                            ecm_time = "%s s" % ecm_time
+                                            # address
+                                            address = ecm_info.get("address", "")                                                               
+                                            # source    
+                                            using = ecm_info.get("using", "")
+                                            if using:
+                                                    if using == "emu":
+                                                            textvalue = "(EMU) %s - %s" % (caid, ecm_time)
+                                                    elif using == "CCcam-s2s":
+                                                            textvalue = "(NET) %s - %s - %s - %s" % (caid, address, reader, ecm_time)                                                   
+                                                    else:
+                                                            textvalue = "%s - %s - READER: %s - %s" % (caid, address, reader, ecm_time)         
+                                            else:
+                                                    # mgcamd
+                                                    source = ecm_info.get("source", None)
+                                                    if source:
+                                                            if source == "emu":
+                                                                    textvalue = "Source:EMU %s" % (caid)
+                                                            else:       
+                                                                    textvalue = "%s - %s - %s" % (caid, source, ecm_time)
+                                                    # oscam
+                                                    oscsource = ecm_info.get("reader", None)
+                                                    if oscsource:
                                                             if oscsource == "emu":
                                                                     textvalue = "Source:EMU %s" % (caid)
                                                             else:        
-								    textvalue = "%s - %s - %s - %s - %s" % (caid, from2, prov, reader, ecm_time)
-				                    # wicardd
-						    wicarddsource = ecm_info.get("response time", None)
-						    if wicarddsource:
+                                                                    textvalue = "%s - %s - %s - %s - %s" % (caid, from2, prov, reader, ecm_time)
+                                                    # wicardd
+                                                    wicarddsource = ecm_info.get("response time", None)
+                                                    if wicarddsource:
                        
-								    textvalue = "%s - %s - %s" % (caid, provider, wicarddsource)								        
-						    # gbox
-						    decode = ecm_info.get("decode", None)
-						    if decode:
-							    if decode == "Internal":
-								    textvalue = "(EMU) %s" % (caid)
-							    else:
-								    textvalue = "%s - %s" % (caid, decode)
-							
-	    return textvalue 
+                                                                    textvalue = "%s - %s - %s" % (caid, provider, wicarddsource)                                                                        
+                                                    # gbox
+                                                    decode = ecm_info.get("decode", None)
+                                                    if decode:
+                                                            if decode == "Internal":
+                                                                    textvalue = "(EMU) %s" % (caid)
+                                                            else:
+                                                                    textvalue = "%s - %s" % (caid, decode)
+                                                        
+            return textvalue 
 
     
-	
+        
     def ecmfile(self):
-	    self.poll_interval = 2000
-	    self.poll_enabled = True        
-	    ecm = None
-	    info = {}
-	    service = self.source.service
-	    if service:
-		    frontendInfo = service.frontendInfo()
-		    if frontendInfo:
-			    try:
-				    ecmpath = "/tmp/ecm%s.info" % frontendInfo.getAll(False).get("tuner_number")
-				    ecm = open(ecmpath, "rb").readlines()
-			    except:
-				    try:
-					    ecm = open("/tmp/ecm.info", "rb").readlines()
-				    except: pass
-		    if ecm:
-			    for line in ecm:
-				    x = line.lower().find("msec")
-				    if x != -1:
-					    info["ecm time"] = line[0:x+4]
-				    else:
-					    item = line.split(":", 1)
-					    if len(item) > 1:
-						    info[item[0].strip().lower()] = item[1].strip()
-					    else:
-						    if not info.has_key("caid"):
-							    x = line.lower().find("caid")
-							    if x != -1:
-								    y = line.find(",")
-								    if y != -1:
-									    info["caid"] = line[x+5:y]
+            self.poll_interval = 2000
+            self.poll_enabled = True        
+            ecm = None
+            info = {}
+            service = self.source.service
+            if service:
+                    frontendInfo = service.frontendInfo()
+                    if frontendInfo:
+                            try:
+                                    ecmpath = "/tmp/ecm%s.info" % frontendInfo.getAll(False).get("tuner_number")
+                                    ecm = open(ecmpath, "rb").readlines()
+                            except:
+                                    try:
+                                            ecm = open("/tmp/ecm.info", "rb").readlines()
+                                    except: pass
+                    if ecm:
+                            for line in ecm:
+                                    x = line.lower().find("msec")
+                                    if x != -1:
+                                            info["ecm time"] = line[0:x+4]
+                                    else:
+                                            item = line.split(":", 1)
+                                            if len(item) > 1:
+                                                    info[item[0].strip().lower()] = item[1].strip()
+                                            else:
+                                                    if "caid" not in info:
+                                                            x = line.lower().find("caid")
+                                                            if x != -1:
+                                                                    y = line.find(",")
+                                                                    if y != -1:
+                                                                            info["caid"] = line[x+5:y]
 
-	    return info
+            return info
 
 
     def parseEcmInfoLine(self, line):
@@ -1383,8 +1383,8 @@ class ExtremInfo(Poll, Converter,
 
 
     def getMgcamd(self):
-	self.poll_interval = 2000
-	self.poll_enabled = True         
+        self.poll_interval = 2000
+        self.poll_enabled = True         
         using = ""
         try:
             f = open("/etc/CurrentBhCamName", "r")
@@ -1403,8 +1403,8 @@ class ExtremInfo(Poll, Converter,
         return False
 
     def getOscam(self):
-	self.poll_interval = 2000
-	self.poll_enabled = True         
+        self.poll_interval = 2000
+        self.poll_enabled = True         
         using = ""
         try:
             f = open("/etc/CurrentBhCamName", "r")
@@ -1422,8 +1422,8 @@ class ExtremInfo(Poll, Converter,
         return False
 
     def getCamd3(self):
-	self.poll_interval = 2000
-	self.poll_enabled = True         
+        self.poll_interval = 2000
+        self.poll_enabled = True         
         using = ""
         try:
             f = open("/etc/CurrentBhCamName", "r")
@@ -1441,8 +1441,8 @@ class ExtremInfo(Poll, Converter,
         return False    
 
     def getCcam(self):
-	self.poll_interval = 2000
-	self.poll_enabled = True         
+        self.poll_interval = 2000
+        self.poll_enabled = True         
         using = ""
         try:
             f = open("/etc/CurrentBhCamName", "r")
@@ -1460,8 +1460,8 @@ class ExtremInfo(Poll, Converter,
         return False
 
     def getMbox(self):
-	self.poll_interval = 2000
-	self.poll_enabled = True         
+        self.poll_interval = 2000
+        self.poll_enabled = True         
         using = ""
         try:
             f = open("/etc/CurrentBhCamName", "r")
@@ -1479,8 +1479,8 @@ class ExtremInfo(Poll, Converter,
         return False
 
     def getGbox(self):
-	self.poll_interval = 2000
-	self.poll_enabled = True         
+        self.poll_interval = 2000
+        self.poll_enabled = True         
         using = ""
         try:
             f = open("/etc/CurrentBhCamName", "r")
@@ -1498,8 +1498,8 @@ class ExtremInfo(Poll, Converter,
         return False
 
     def getIncubus(self):
-	self.poll_interval = 2000
-	self.poll_enabled = True         
+        self.poll_interval = 2000
+        self.poll_enabled = True         
         using = ""
         try:
             f = open("/etc/CurrentBhCamName", "r")
@@ -1517,8 +1517,8 @@ class ExtremInfo(Poll, Converter,
         return False
 
     def getWicardd(self):
-	self.poll_interval = 2000
-	self.poll_enabled = True         
+        self.poll_interval = 2000
+        self.poll_enabled = True         
         using = ""
         try:
             f = open("/etc/CurrentBhCamName", "r")

@@ -1,6 +1,6 @@
 from Components.VariableText import VariableText
 from enigma import eLabel, iServiceInformation, eServiceReference, eServiceCenter
-from Renderer import Renderer
+from .Renderer import Renderer
 
 
 class chNumberHD(Renderer, VariableText):

@@ -46,14 +46,14 @@ class ChannelSelectionExtraInfo(Converter, object):
     @cached
     def getText(self):
         service = self.source.service
-        print 'Test source='
-        print self.source
-        print 'Test service= %s' % service
+        print('Test source=')
+        print(self.source)
+        print('Test service= %s' % service)
         if service is None:
             return ''
-        print 'Flags'
+        print('Flags')
         marker = service.flags & eServiceReference.isMarker == eServiceReference.isMarker
-        print marker
+        print(marker)
         if self.type == self.Reference:
             if marker:
                 return ''
@@ -66,11 +66,11 @@ class ChannelSelectionExtraInfo(Converter, object):
         if self.type >= self.NextEventTitle and self.type <= self.NextEventFull:
             eventNext = ''
             list = self.epgcache.lookupEvent(['IBDCTSERNX', (service.toString(), 1, -1)])
-            print '---------- ChannelSelectionExtraInfo ----------'
-            print list
+            print('---------- ChannelSelectionExtraInfo ----------')
+            print(list)
             if len(list) > 0:
                 eventNext = list[0]
-                print eventNext
+                print(eventNext)
                 if eventNext[4]:
                     if self.type == self.NextEventTitle:
                         return str(eventNext[4])
@@ -93,17 +93,17 @@ class ChannelSelectionExtraInfo(Converter, object):
                 return ' '
         elif self.type >= self.TInfoFrequency and self.type <= self.TInfoFull:
             info = eServiceCenter.getInstance().info(service)
-            print 'TInfo'
-            print info
+            print('TInfo')
+            print(info)
             if info:
                 transponderData = info.getInfoObject(service, iServiceInformation.sTransponderData)
                 fq = pol = fec = sr = orb = ''
-                print transponderData
+                print(transponderData)
                 try:
-                    if transponderData.has_key('frequency'):
+                    if 'frequency' in transponderData:
                         tmp = int(transponderData['frequency']) / 1000
                         fq = str(tmp)
-                    if transponderData.has_key('polarization'):
+                    if 'polarization' in transponderData:
                         try:
                             pol = {eDVBFrontendParametersSatellite.Polarisation_Horizontal: 'H  ',
                              eDVBFrontendParametersSatellite.Polarisation_Vertical: 'V  ',
@@ -112,7 +112,7 @@ class ChannelSelectionExtraInfo(Converter, object):
                         except:
                             pol = 'N/A'
 
-                    if transponderData.has_key('fec_inner'):
+                    if 'fec_inner' in transponderData:
                         try:
                             fec = {eDVBFrontendParametersSatellite.FEC_None: _('None  '),
                              eDVBFrontendParametersSatellite.FEC_Auto: _('Auto  '),
@@ -141,10 +141,10 @@ class ChannelSelectionExtraInfo(Converter, object):
                             except:
                                 fec = 'N/A'
 
-                    if transponderData.has_key('symbol_rate'):
+                    if 'symbol_rate' in transponderData:
                         tmp = int(transponderData['symbol_rate']) / 1000
                         sr = str(tmp)
-                    if transponderData.has_key('orbital_position'):
+                    if 'orbital_position' in transponderData:
                         try:
                             orb = {3590: ' (1.0W)',
                              3592: ' (0.8W)',
@@ -252,12 +252,12 @@ class ChannelSelectionExtraInfo(Converter, object):
                 except:
                     pass
 
-                print self.type
-                print fq
-                print pol
-                print fec
-                print sr
-                print orb
+                print(self.type)
+                print(fq)
+                print(pol)
+                print(fec)
+                print(sr)
+                print(orb)
                 if self.type == self.TInfoFrequency:
                     return fq
                 if self.type == self.TInfoPolaryzation:
@@ -279,7 +279,7 @@ class ChannelSelectionExtraInfo(Converter, object):
     text = property(getText)
 
     def changed(self, what):
-        print 'Test what'
-        print what
+        print('Test what')
+        print(what)
         if what[0] != self.CHANGED_SPECIFIC or what[1] in (iPlayableService.evStart,):
             Converter.changed(self, what)

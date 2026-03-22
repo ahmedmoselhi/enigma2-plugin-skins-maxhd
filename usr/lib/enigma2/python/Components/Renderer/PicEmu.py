@@ -2,7 +2,7 @@
 from Tools.Directories import fileExists
 from Tools.LoadPixmap import LoadPixmap 
 from Components.Pixmap import Pixmap 
-from Renderer import Renderer 
+from .Renderer import Renderer 
 from enigma import ePixmap, eTimer 
 from Tools.Directories import fileExists, SCOPE_SKIN_IMAGE, SCOPE_CURRENT_SKIN, resolveFilename 
 from Components.config import config
@@ -37,8 +37,8 @@ class PicEmu(Renderer, Poll):
     GUI_WIDGET = ePixmap
 
     def changed(self, what):
-	self.poll_interval = 2000
-	self.poll_enabled = True        
+        self.poll_interval = 2000
+        self.poll_enabled = True        
         if self.instance:
             pngname = ''
             if (what[0] != self.CHANGED_CLEAR):
@@ -46,14 +46,14 @@ class PicEmu(Renderer, Poll):
 
                 if fileExists("/etc/CurrentBhCamName"):
                        f = open("/etc/CurrentBhCamName",'r')
-		       line = f.readline()
-		       text = line.strip()
-		       f.close()		       
+                       line = f.readline()
+                       text = line.strip()
+                       f.close()                       
                 elif fileExists("/etc/active_emu.list"):
                        f = open("/etc/active_emu.list",'r')
-		       line = f.readline()
-		       text = line.strip()
-		       f.close()		       
+                       line = f.readline()
+                       text = line.strip()
+                       f.close()                       
                 pngname = self.nameCache.get(text, '')
                 if (pngname == ''):
                     pngname = self.findEmu(text)
@@ -73,7 +73,7 @@ class PicEmu(Renderer, Poll):
             if (self.pngname != pngname):
                 self.pngname = pngname
 
-		self.instance.setPixmapFromFile(self.pngname)
+                self.instance.setPixmapFromFile(self.pngname)
 
 
 

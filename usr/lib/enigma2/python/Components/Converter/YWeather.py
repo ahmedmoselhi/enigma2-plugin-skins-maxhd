@@ -4,7 +4,7 @@
 from Components.Converter.Converter import Converter
 from Components.Element import cached
 from Tools.Directories import fileExists
-from Poll import Poll
+from .Poll import Poll
 import time
 import os
 weather_city = '656958'
@@ -143,9 +143,9 @@ class YWeather(Poll, Converter, object):
 		elif self.type == self.temp:
 			if info != "N/A":
 				if xweather['ytemp'][0] != '-' and xweather['ytemp'][0] != '0':
-					info = '+' + xweather['ytemp'] + '%s' % unichr(176).encode("latin-1")
+					info = '+' + xweather['ytemp'] + '%s' % chr(176).encode("latin-1")
 				else:
-					info = xweather['ytemp'] + '%s' % unichr(176).encode("latin-1")
+					info = xweather['ytemp'] + '%s' % chr(176).encode("latin-1")
 		elif self.type == self.picon:
 			info = xweather['ypicon']
 		return info

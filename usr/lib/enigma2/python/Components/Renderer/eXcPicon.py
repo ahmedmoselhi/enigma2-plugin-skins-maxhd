@@ -1,6 +1,6 @@
 # 2013.06.29 21:16:37 Arab Standard Time
 #Embedded file name: /usr/lib/enigma2/python/Components/Renderer/eXcPicon.py
-from Renderer import Renderer
+from .Renderer import Renderer
 from enigma import ePixmap, eEnv, ePicLoad
 from Tools.Directories import fileExists, SCOPE_SKIN_IMAGE, SCOPE_CURRENT_SKIN, resolveFilename
 

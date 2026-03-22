@@ -26,7 +26,7 @@
 # 17.04.2014 added path in plugin dir...
 # 02.07.2014 small fix reference
 
-from Renderer import Renderer 
+from .Renderer import Renderer 
 from enigma import ePixmap
 from Tools.Directories import fileExists, SCOPE_SKIN_IMAGE, SCOPE_CURRENT_SKIN, SCOPE_PLUGINS, resolveFilename 
 

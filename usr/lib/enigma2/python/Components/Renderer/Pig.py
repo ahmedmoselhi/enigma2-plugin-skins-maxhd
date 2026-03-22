@@ -1,7 +1,7 @@
 ##
 ## P(icture)i(n)g(raphics) renderer
 ##
-from Renderer import Renderer
+from .Renderer import Renderer
 from enigma import eVideoWidget, eSize, ePoint, getDesktop
 
 class Pig(Renderer):

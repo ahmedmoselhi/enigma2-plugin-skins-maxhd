@@ -12,7 +12,7 @@
 # ver 0.4b 15/12/2012 added xATYPE mod by 2boom
 # ver 0.4c 16/12/2012 added xALLTYPE mod by 2boom
 # ver 0.5a 03/01/2013 speed opt. mod by 2boom
-from Poll import Poll
+from .Poll import Poll
 from Components.Converter.Converter import Converter
 from enigma import iServiceInformation, iPlayableService
 from Components.Element import cached

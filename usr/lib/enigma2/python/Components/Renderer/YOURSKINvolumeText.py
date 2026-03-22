@@ -1,7 +1,7 @@
 #
 from Components.VariableText import VariableText
 from enigma import eLabel, eDVBVolumecontrol, eTimer
-from Renderer import Renderer
+from .Renderer import Renderer
 
 class YOURSKINvolumeText(Renderer, VariableText):
 	def __init__(self):

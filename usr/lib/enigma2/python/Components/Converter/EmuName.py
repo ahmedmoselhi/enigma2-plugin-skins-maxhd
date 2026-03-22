@@ -19,7 +19,7 @@ from Components.Converter.Converter import Converter
 from Components.config import config
 from Components.Element import cached
 from Tools.Directories import fileExists
-from Poll import Poll
+from .Poll import Poll
 import os
 
 class EmuName(Poll, Converter, object):

@@ -25,7 +25,7 @@
 
 from Components.VariableText import VariableText
 from enigma import eLabel, eEPGCache
-from Renderer import Renderer
+from .Renderer import Renderer
 from time import localtime
 
 class NextEventName(Renderer, VariableText):

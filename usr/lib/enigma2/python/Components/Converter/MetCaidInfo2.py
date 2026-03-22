@@ -10,7 +10,7 @@ from Components.Converter.Converter import Converter
 from enigma import iServiceInformation, iPlayableService
 from Tools.Directories import fileExists
 from Components.Element import cached
-from Poll import Poll
+from .Poll import Poll
 import os
 
 info = {}
@@ -514,13 +514,13 @@ class MetCaidInfo2(Poll, Converter, object):
 									item[1] = item[1][tt+1:]
 							info[item[0].strip().lower()] = item[1].strip()
 						else:
-							if not info.has_key("caid"):
+							if "caid" not in info:
 								x = line.lower().find("caid")
 								if x != -1:
 									y = line.find(",")
 									if y != -1:
 										info["caid"] = line[x+5:y]
-							if not info.has_key("pid"):
+							if "pid" not in info:
 								x = line.lower().find("pid")
 								if x != -1:
 									y = line.find(" =")

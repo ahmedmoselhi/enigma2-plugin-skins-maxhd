@@ -46,7 +46,7 @@ class ValiXDMaxTemp(Renderer, VariableText):
 						maxtemp = tt
 			except:
 				pass
-			self.text = str(maxtemp) + "°C"
+			self.text = str(maxtemp) + "Â°C"
 
 	def onShow(self):
 		self.suspended = False

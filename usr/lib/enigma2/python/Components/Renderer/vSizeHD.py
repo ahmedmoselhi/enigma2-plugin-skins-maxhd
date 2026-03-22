@@ -1,6 +1,6 @@
 from Components.VariableText import VariableText
 from enigma import eLabel, iServiceInformation
-from Renderer import Renderer
+from .Renderer import Renderer
 
 
 class vSizeHD(Renderer, VariableText):

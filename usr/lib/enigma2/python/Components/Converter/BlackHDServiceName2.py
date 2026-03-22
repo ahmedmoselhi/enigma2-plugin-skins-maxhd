@@ -183,7 +183,7 @@ class BlackHDServiceName2(Converter, object):
             elif f == 'f':
                 if type in ('DVB-S', 'DVB-C'):
                     x = self.tpdata.get('fec_inner', 15)
-                    result += x in range(10) + [15] and {0: 'Auto',
+                    result += x in list(range(10)) + [15] and {0: 'Auto',
                      1: '1/2',
                      2: '2/3',
                      3: '3/4',

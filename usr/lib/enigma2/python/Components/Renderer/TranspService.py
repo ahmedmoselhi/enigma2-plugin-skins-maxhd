@@ -1,4 +1,4 @@
-from Renderer import Renderer
+from .Renderer import Renderer
 from enigma import eLabel
 from Components.VariableText import VariableText
 from enigma import eServiceCenter, iServiceInformation, eDVBFrontendParametersSatellite, eDVBFrontendParametersCable
@@ -26,10 +26,10 @@ class TranspService(VariableText, Renderer):
                     sname = info.getInfoObject(serviceref, iServiceInformation.sTransponderData)
                     fq = pol = fec = sr = orb = ''
                     try:
-                        if sname.has_key('frequency'):
+                        if 'frequency' in sname:
                             tmp = int(sname['frequency']) / 1000
                             fq = str(tmp) + '  '
-                        if sname.has_key('polarization'):
+                        if 'polarization' in sname:
                             try:
                                 pol = {eDVBFrontendParametersSatellite.Polarisation_Horizontal: 'H  ',
                                  eDVBFrontendParametersSatellite.Polarisation_Vertical: 'V  ',
@@ -38,7 +38,7 @@ class TranspService(VariableText, Renderer):
                             except:
                                 pol = 'N/A  '
 
-                        if sname.has_key('fec_inner'):
+                        if 'fec_inner' in sname:
                             try:
                                 fec = {eDVBFrontendParametersSatellite.FEC_None: _('None  '),
                                  eDVBFrontendParametersSatellite.FEC_Auto: _('Auto  '),
@@ -67,10 +67,10 @@ class TranspService(VariableText, Renderer):
                                 except:
                                     fec = 'N/A  '
 
-                        if sname.has_key('symbol_rate'):
+                        if 'symbol_rate' in sname:
                             tmp = int(sname['symbol_rate']) / 1000
                             sr = str(tmp) + '  '
-                        if sname.has_key('orbital_position'):
+                        if 'orbital_position' in sname:
                             try:
                                 orb = {3590: 'Thor/Intelsat (1.0W)',
                                  3560: 'Amos (4.0W)',

@@ -1,4 +1,4 @@
-from Converter import Converter
+from .Converter import Converter
 from time import localtime, strftime
 from Components.Element import cached
 from Components.config import config
@@ -78,7 +78,7 @@ class ELGClockToText(Converter, object):
                  'Dez'][t.tm_mon - 1]
                 m2 = ['Januar',
                  'Februar',
-                 u'M\xe4rz',
+                 'M\xe4rz',
                  'April',
                  'Mai',
                  'Juni',
