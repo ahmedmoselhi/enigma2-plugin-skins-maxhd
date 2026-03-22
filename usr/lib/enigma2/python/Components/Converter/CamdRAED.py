@@ -11,7 +11,7 @@ from Components.ConfigList import ConfigListScreen
 from Components.config import config, getConfigListEntry, ConfigText, ConfigPassword, ConfigClock, ConfigSelection, ConfigSubsection, ConfigYesNo, configfile, NoSave
 from Components.Element import cached
 from Tools.Directories import fileExists
-from Poll import Poll
+from .Poll import Poll
 import os
 
 

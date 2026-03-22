@@ -1,6 +1,6 @@
 # coded by shamann
 
-from Renderer import Renderer
+from .Renderer import Renderer
 from enigma import eLabel
 from enigma import eTimer
 from Components.VariableText import VariableText

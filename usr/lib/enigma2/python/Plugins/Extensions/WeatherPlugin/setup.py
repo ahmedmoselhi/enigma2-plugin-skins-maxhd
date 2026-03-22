@@ -35,7 +35,7 @@ from Components.config import ConfigSubsection, ConfigText, ConfigSelection, \
 	getConfigListEntry, config, configfile
 from xml.etree.cElementTree import fromstring as cet_fromstring
 from twisted.web.client import getPage
-from urllib import quote as urllib_quote
+from urllib.parse import quote as urllib_quote
 
 def initWeatherPluginEntryConfig():
 	s = ConfigSubsection()
@@ -257,7 +257,7 @@ class MSNWeatherPluginEntryConfigScreen(ConfigListScreen, Screen):
 			errormessage = ""
 			root = cet_fromstring(xmlstring)
 			for childs in root:
-				if childs.tag == "weather" and childs.attrib.has_key("errormessage"):
+				if childs.tag == "weather" and "errormessage" in childs.attrib:
 					errormessage = childs.attrib.get("errormessage").encode("utf-8", 'ignore')
 					break
 			if len(errormessage) !=0:
@@ -267,7 +267,7 @@ class MSNWeatherPluginEntryConfigScreen(ConfigListScreen, Screen):
 			
 	def error(self, error = None):
 		if error is not None:
-			print error
+			print(error)
 		
 	def searchCallback(self, result):
 		if result:

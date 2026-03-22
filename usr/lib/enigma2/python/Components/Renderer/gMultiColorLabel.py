@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from Components.VariableText import VariableText
-from Renderer import Renderer
+from .Renderer import Renderer
 
 from enigma import eLabel
 from skin import parseColor
@@ -54,7 +54,7 @@ class gMultiColorLabel(VariableText, Renderer):
 				self.instance.setForegroundColor(self.foreColors[x])
 				self.instance.invalidate()
 			else:
-				print "setForegroundColorNum failed!",x
+				print("setForegroundColorNum failed!",x)
 	
 	def setBackgroundColorNum(self, x):
 		if self.instance:
@@ -62,7 +62,7 @@ class gMultiColorLabel(VariableText, Renderer):
 				self.instance.setBackgroundColor(self.backColors[x])
 				self.instance.invalidate()
 			else:
-				print "setBackgroundColorNum failed!",x
+				print("setBackgroundColorNum failed!",x)
 
 	def postWidgetCreate(self, instance):
 		self.__text = getattr(self.source, "text", None) != None and True

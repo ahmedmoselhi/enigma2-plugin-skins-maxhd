@@ -74,7 +74,7 @@ class dExtraInfo(Converter, object):
                     expertString = expertString + ' ' + 'L:' + fileString[levelIndex + 4]
 
         except:
-            print 'Infobar'
+            print('Infobar')
 
         return expertString
 
@@ -203,7 +203,7 @@ class dExtraInfo(Converter, object):
             return ''
 
     def getStreamInfo(self, ltype):
-        print '============> getText PROV_CA_ID'
+        print('============> getText PROV_CA_ID')
         try:
             file = open('/tmp/ecm.info', 'r')
         except:
@@ -240,7 +240,7 @@ class dExtraInfo(Converter, object):
         return ''
 
     def getSourceInfo(self, ltype):
-        print '============> getText NETCARD_INFO'
+        print('============> getText NETCARD_INFO')
         try:
             file = open('/tmp/ecm.info', 'r')
         except:

@@ -1,7 +1,7 @@
 ##
 ## Picon renderer by Gruffy .. Mod By RAED
 ##
-from Renderer import Renderer
+from .Renderer import Renderer
 from enigma import ePixmap, eEnv, ePicLoad
 from Tools.Directories import fileExists, SCOPE_SKIN_IMAGE, SCOPE_CURRENT_SKIN, resolveFilename
 

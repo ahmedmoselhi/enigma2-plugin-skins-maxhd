@@ -16,7 +16,7 @@
 #######################################################################
 
 import math
-from Renderer import Renderer
+from .Renderer import Renderer
 from skin import parseColor
 from enigma import eCanvas, eSize, gRGB, eRect, eDVBVolumecontrol
 from Components.config import config

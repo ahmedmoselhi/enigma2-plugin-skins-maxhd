@@ -14,7 +14,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-from Poll import Poll
+from .Poll import Poll
 from Components.Converter.Converter import Converter
 from Components.Element import cached
 from Tools.Directories import fileExists
@@ -42,7 +42,7 @@ class FanTempInfo(Poll, Converter, object):
 				info = open("/proc/stb/fp/fan_speed").read().strip('\n')
 		elif self.type is self.TempInfo:
 			if fileExists("/proc/stb/sensors/temp0/value") and fileExists("/proc/stb/sensors/temp0/unit"):
-				info = "%s%s%s" % (open("/proc/stb/sensors/temp0/value").read().strip('\n'), unichr(176).encode("latin-1"), open("/proc/stb/sensors/temp0/unit").read().strip('\n'))
+				info = "%s%s%s" % (open("/proc/stb/sensors/temp0/value").read().strip('\n'), chr(176).encode("latin-1"), open("/proc/stb/sensors/temp0/unit").read().strip('\n'))
 		return info
 	
 	text = property(getText)

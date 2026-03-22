@@ -21,7 +21,7 @@
 from Components.Converter.Converter import Converter
 from Components.Element import cached
 from os import statvfs
-from Poll import Poll
+from .Poll import Poll
 from Components.config import config
 
 class mFlashInfo(Poll, Converter, object):

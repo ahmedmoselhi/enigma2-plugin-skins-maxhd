@@ -20,7 +20,7 @@ from Components.Converter.Converter import Converter
 from enigma import iServiceInformation, iPlayableService, eTimer
 from Components.Element import cached
 try:
-	from bitratecalc import eBitrateCalculator
+	from .bitratecalc import eBitrateCalculator
 except:
 	pass
 

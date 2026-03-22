@@ -6,7 +6,7 @@ from Components.config import config
 from Components.PluginComponent import plugins
 from enigma import iServiceInformation, iFrontendInformation, iPlayableService, iPlayableServicePtr
 from enigma import eServiceCenter, eServiceReference, eConsoleAppContainer, eDVBFrontendParametersSatellite
-from Poll import Poll
+from .Poll import Poll
 from Screens.Standby import inStandby
 from ServiceReference import ServiceReference
 from xml.etree.cElementTree import parse
@@ -321,9 +321,9 @@ class MoreInfo2(Poll, Converter, object):
          'Trans': 'n/a',
          'CodeRateLP': 'n/a',
          'Guard': 'n/a'}
-        if tpi.has_key('frequency'):
+        if 'frequency' in tpi:
             self.TP['Freq'] = str(int(tpi['frequency']) / 1000)
-        if tpi.has_key('polarization'):
+        if 'polarization' in tpi:
             polar = str(tpi['polarization'])
             if len(polar) > 1:
                 if len(polar) < 11:
@@ -340,19 +340,19 @@ class MoreInfo2(Poll, Converter, object):
                 self.TP['Polar'] = 'CR'
             else:
                 self.TP['Polar'] = '?'
-        if tpi.has_key('symbol_rate'):
+        if 'symbol_rate' in tpi:
             self.TP['SR'] = str(int(tpi['symbol_rate']) / 1000)
-        elif tpi.has_key('symbolrate'):
+        elif 'symbolrate' in tpi:
             self.TP['SR'] = str(int(tpi['symbolrate']) / 1000)
-        if tpi.has_key('modulation'):
+        if 'modulation' in tpi:
             self.TP['Mod'] = {0: 'Auto',
              1: 'QPSK',
              2: '8PSK',
              3: 'QAM16'}[tpi['modulation']]
-        if tpi.has_key('system'):
+        if 'system' in tpi:
             self.TP['Sys'] = {0: 'DVB-S',
              1: 'DVB-S2'}[tpi['system']]
-        if tpi.has_key('fec_inner'):
+        if 'fec_inner' in tpi:
             fec = str(tpi['fec_inner'])
             if fec == '0':
                 fec = 'AUTO'
@@ -379,24 +379,24 @@ class MoreInfo2(Poll, Converter, object):
             else:
                 fec = '?'
             self.TP['FEC'] = fec
-        elif tpi.has_key('fec inner'):
+        elif 'fec inner' in tpi:
             self.TP['FEC'] = tpi['fec inner']
         if self.TP['Freq'] != 0:
             self.TP['All'] = '%s %s %s %s' % (self.TP['Freq'],
              self.TP['Polar'],
              self.TP['SR'],
              self.TP['FEC'])
-        if tpi.has_key('transmission_mode'):
+        if 'transmission_mode' in tpi:
             self.TP['Sys'] = 'DVB-T'
             self.TP['Trans'] = {0: _('Auto'),
              1: '2k',
              2: '8k'}[tpi['transmission_mode']]
-            if tpi.has_key('constellation'):
+            if 'constellation' in tpi:
                 self.TP['Mod'] = {0: _('Auto'),
                  1: 'QPSK',
                  2: 'QAM16',
                  3: 'QAM64'}[tpi['constellation']]
-            if tpi.has_key('frequency'):
+            if 'frequency' in tpi:
                 self.TP['Freq'] = str(int(tpi['frequency']) / 1000000) + 'Mhz'
                 try:
                     frq = int(tpi['frequency']) / 1000000
@@ -413,14 +413,14 @@ class MoreInfo2(Poll, Converter, object):
                 except:
                     pass
 
-            if tpi.has_key('code_rate_lp'):
+            if 'code_rate_lp' in tpi:
                 self.TP['CodeRateLP'] = {0: _('Auto'),
                  1: '1/2',
                  2: '2/3',
                  3: '3/4',
                  4: '5/6',
                  5: '7/8'}[tpi['code_rate_lp']]
-            if tpi.has_key('guard_interval'):
+            if 'guard_interval' in tpi:
                 self.TP['Guard'] = {0: _('Auto'),
                  1: '1/32',
                  2: '1/16',
@@ -715,32 +715,32 @@ class MoreInfo2(Poll, Converter, object):
         retval = self.type
         ref = None
         t = localtime()
-        mStr = [u'\u044f\u043d\u0432\u0430\u0440\u044f',
-         u'\u0444\u0435\u0432\u0440\u0430\u043b\u044f',
-         u'\u043c\u0430\u0440\u0442\u0430',
-         u'\u0430\u043f\u0440\u0435\u043b\u044f',
-         u'\u043c\u0430\u044f',
-         u'\u0438\u044e\u043d\u044f',
-         u'\u0438\u044e\u043b\u044f',
-         u'\u0430\u0432\u0433\u0443\u0441\u0442\u0430',
-         u'\u0441\u0435\u043d\u0442\u044f\u0431\u0440\u044f',
-         u'\u043e\u043a\u0442\u044f\u0431\u0440\u044f',
-         u'\u043d\u043e\u044f\u0431\u0440\u044f',
-         u'\u0434\u0435\u043a\u0430\u0431\u0440\u044f']
-        dStr = [u'\u041f\u043e\u043d\u0435\u0434\u0435\u043b\u044c\u043d\u0438\u043a',
-         u'\u0412\u0442\u043e\u0440\u043d\u0438\u043a',
-         u'\u0421\u0440\u0435\u0434\u0430',
-         u'\u0427\u0435\u0442\u0432\u0435\u0440\u0433',
-         u'\u041f\u044f\u0442\u043d\u0438\u0446\u0430',
-         u'\u0421\u0443\u0431\u0431\u043e\u0442\u0430',
-         u'\u0412\u043e\u0441\u043a\u0440\u0435\u0441\u0435\u043d\u044c\u0435']
-        dStrSh = [u'\u041f\u043d',
-         u'\u0412\u0442',
-         u'\u0421\u0440',
-         u'\u0427\u0442',
-         u'\u041f\u0442',
-         u'\u0421\u0431',
-         u'\u0412\u0441']
+        mStr = ['\u044f\u043d\u0432\u0430\u0440\u044f',
+         '\u0444\u0435\u0432\u0440\u0430\u043b\u044f',
+         '\u043c\u0430\u0440\u0442\u0430',
+         '\u0430\u043f\u0440\u0435\u043b\u044f',
+         '\u043c\u0430\u044f',
+         '\u0438\u044e\u043d\u044f',
+         '\u0438\u044e\u043b\u044f',
+         '\u0430\u0432\u0433\u0443\u0441\u0442\u0430',
+         '\u0441\u0435\u043d\u0442\u044f\u0431\u0440\u044f',
+         '\u043e\u043a\u0442\u044f\u0431\u0440\u044f',
+         '\u043d\u043e\u044f\u0431\u0440\u044f',
+         '\u0434\u0435\u043a\u0430\u0431\u0440\u044f']
+        dStr = ['\u041f\u043e\u043d\u0435\u0434\u0435\u043b\u044c\u043d\u0438\u043a',
+         '\u0412\u0442\u043e\u0440\u043d\u0438\u043a',
+         '\u0421\u0440\u0435\u0434\u0430',
+         '\u0427\u0435\u0442\u0432\u0435\u0440\u0433',
+         '\u041f\u044f\u0442\u043d\u0438\u0446\u0430',
+         '\u0421\u0443\u0431\u0431\u043e\u0442\u0430',
+         '\u0412\u043e\u0441\u043a\u0440\u0435\u0441\u0435\u043d\u044c\u0435']
+        dStrSh = ['\u041f\u043d',
+         '\u0412\u0442',
+         '\u0421\u0440',
+         '\u0427\u0442',
+         '\u041f\u0442',
+         '\u0421\u0431',
+         '\u0412\u0441']
         self.i = self.i + 1
         if isinstance(self.source, CurrentService):
             use_in = self.IB

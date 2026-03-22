@@ -20,8 +20,8 @@
 
 
 # <widget source="session.CurrentService" render="Label" position="189,397" zPosition="4" size="350,20" noWrap="1" valign="center" halign="center" font="Regular;14" foregroundColor="clText" transparent="1"  backgroundColor="#20002450">
-#	<convert type="CamdInfo">Camd</convert>
-# </widget>			
+#       <convert type="CamdInfo">Camd</convert>
+# </widget>                     
 
 from enigma import iServiceInformation
 from Components.Converter.Converter import Converter
@@ -29,45 +29,45 @@ from Components.Element import cached
 from Tools.Directories import fileExists
 
 class caminfo(Converter, object):
-	def __init__(self, type):
-		Converter.__init__(self, type)
+        def __init__(self, type):
+                Converter.__init__(self, type)
 
-	@cached
-	def getText(self):
-		service = self.source.service
-		info = service and service.info()
-		if not info:
-			return ""
-			camd = None
-			
-		# OoZooN 	
-                if fileExists("/etc/caminfo"):		
+        @cached
+        def getText(self):
+                service = self.source.service
+                info = service and service.info()
+                if not info:
+                        return ""
+                        camd = None
+                        
+                # OoZooN        
+                if fileExists("/etc/caminfo"):          
                    try:
-			camdlist = open("/etc/caminfo", "r")
-		   except:
-			return None
-			
-		# Domica	
-		elif fileExists("/etc/active_emu.list"):
-		   try:
-			camdlist = open("/etc/active_emu.list", "r")
-		   except:
-			return None
-		else:
+                        camdlist = open("/etc/caminfo", "r")
+                   except:
+                        return None
+                        
+                # Domica        
+                elif fileExists("/etc/active_emu.list"):
+                   try:
+                        camdlist = open("/etc/active_emu.list", "r")
+                   except:
+                        return None
+                else:
                    camdlist = None
-		
-		if camdlist is not None:
-			for current in camdlist:
-				camd = current
-			camdlist.close()
-			return camd
-		else:
-			return ""
+                
+                if camdlist is not None:
+                        for current in camdlist:
+                                camd = current
+                        camdlist.close()
+                        return camd
+                else:
+                        return ""
 
-	text = property(getText)
+        text = property(getText)
 
-	def changed(self, what):
-		Converter.changed(self, what)
+        def changed(self, what):
+                Converter.changed(self, what)
 
 
 

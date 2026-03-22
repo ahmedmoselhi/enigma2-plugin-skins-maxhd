@@ -22,10 +22,10 @@
 #
 #
 #######################################################################
-from Renderer import Renderer
+from .Renderer import Renderer
 from Components.VariableText import VariableText
 #import library to do http requests:
-import urllib
+import urllib.request, urllib.parse, urllib.error
 from enigma import eLabel
 #import easy to use xml parser called minidom:
 from xml.dom.minidom import parseString
@@ -86,13 +86,13 @@ class MetrixWeatherUpdater(Renderer, VariableText):
 
 
 	def GetWeather(self):
-		print "MetrixWeather lookup for ID " + str(self.woeid)
+		print("MetrixWeather lookup for ID " + str(self.woeid))
 		url = "http://query.yahooapis.com/v1/public/yql?q=select%20item%20from%20weather.forecast%20where%20woeid%3D%22"+str(self.woeid)+"%22&format=xml"
 		#url = "http://query.yahooapis.com/v1/public/yql?q=select%20item%20from%20weather.forecast%20where%20woeid%3D%22"+str(self.woeid)+"%22%20u%3Dc&format=xml"
 		
 		
 		# where location in (select id from weather.search where query="oslo, norway")
-		file = urllib.urlopen(url)
+		file = urllib.request.urlopen(url)
 		data = file.read()
 		file.close()
 		

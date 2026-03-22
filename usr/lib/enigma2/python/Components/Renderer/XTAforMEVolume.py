@@ -15,7 +15,7 @@
 #    
 #######################################################################
 
-from Renderer import Renderer
+from .Renderer import Renderer
 from enigma import eLabel
 from enigma import eDVBVolumecontrol, eTimer
 from Components.VariableText import VariableText

@@ -1,4 +1,4 @@
-from Renderer import Renderer
+from .Renderer import Renderer
 
 from enigma import eCanvas, eRect, ePoint, gRGB
 
@@ -36,7 +36,7 @@ class Canvas(Renderer):
 			elif l[0] == 3:
 				self.instance.drawLine(l[1], l[2], l[3], l[4], gRGB(l[5]))
 			else:
-				print "drawlist entry:", l
+				print("drawlist entry:", l)
 				raise RuntimeError("invalid drawlist entry")
 
 	def changed(self, what):

@@ -1,6 +1,6 @@
 from Tools.LoadPixmap import LoadPixmap 
 from Components.Pixmap import Pixmap 
-from Renderer import Renderer 
+from .Renderer import Renderer 
 from enigma import ePixmap, eTimer 
 from Tools.Directories import fileExists, SCOPE_SKIN_IMAGE, SCOPE_CURRENT_SKIN, resolveFilename 
 from Components.config import config
@@ -151,7 +151,7 @@ class PiconSatTV(Renderer):
 								 50: "50E",
 								 48: "48E",
 								 30: "30E"}[frontendData.get("orbital_position", "None")]
-							except Exception, e:
+							except Exception as e:
 								pass
 				
 				pos = sname.rfind(':')

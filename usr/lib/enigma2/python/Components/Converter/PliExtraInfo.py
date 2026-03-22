@@ -6,7 +6,7 @@ from Components.Element import cached
 from Components.config import config
 from Tools.Transponder import ConvertToHumanReadable
 from Tools.GetEcmInfo import GetEcmInfo
-from Poll import Poll
+from .Poll import Poll
 from Components.Converter.ChannelNumbers import channelnumbers
 
 def addspace(text):

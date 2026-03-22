@@ -2,7 +2,7 @@
 
 #######################################################################
 
-from Renderer import Renderer
+from .Renderer import Renderer
 from enigma import eLabel
 from Components.VariableText import VariableText
 from enigma import eServiceReference

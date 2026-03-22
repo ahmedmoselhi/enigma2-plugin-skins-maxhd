@@ -31,7 +31,7 @@ class CashServiceList:
         readlines = file.readlines()
         f_service = False
         i = 0
-        for n in xrange(0, len(readlines)):
+        for n in range(0, len(readlines)):
             if readlines[n] == 'services\n':
                 f_service = True
                 continue

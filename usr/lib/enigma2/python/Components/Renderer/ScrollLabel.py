@@ -2,7 +2,7 @@
 #Embedded file name: /usr/lib/enigma2/python/Components/Renderer/ScrollLabel.py
 import skin
 from Components.VariableText import VariableText
-from Renderer import Renderer
+from .Renderer import Renderer
 from enigma import eLabel, eWidget, ePoint, eSize, gFont, fontRenderClass, eTimer
 
 class ScrollLabel(VariableText, Renderer):
@@ -41,7 +41,7 @@ class ScrollLabel(VariableText, Renderer):
                 from skin import cascadingStyleSheets
                 styles = value.split(',')
                 for style in styles:
-                    for _attrib in cascadingStyleSheets[style].keys():
+                    for _attrib in list(cascadingStyleSheets[style].keys()):
                         _value = cascadingStyleSheets[style][_attrib]
                         if _attrib.find('step') != -1:
                             self.step = int(_value)

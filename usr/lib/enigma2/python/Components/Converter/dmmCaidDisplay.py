@@ -21,7 +21,7 @@
 from Components.Converter.Converter import Converter
 from enigma import iServiceInformation, iPlayableService
 from Components.Element import cached
-from Poll import Poll
+from .Poll import Poll
 
 # CAID	Cryptsystem			Symbol
 # --------------------------------
@@ -75,7 +75,7 @@ class dmmCaidDisplay(Poll, Converter, object):
 						if len(c) == 3:
 							c = "0%s" % c
 						c = c[:2].upper()
-						if self.systemCaids.has_key(c):
+						if c in self.systemCaids:
 							caidlist[c] = (self.systemCaids.get(c),1)
 							
 					ecm_info = self.ecmfile()
@@ -176,7 +176,7 @@ class dmmCaidDisplay(Poll, Converter, object):
 						if len(item) > 1:
 							info[item[0].strip().lower()] = item[1].strip()
 						else:
-							if not info.has_key("caid"):
+							if "caid" not in info:
 								x = line.lower().find("caid")
 								if x != -1:
 									y = line.find(",")
