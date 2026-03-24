@@ -3667,8 +3667,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget backgroundColor="black" font="RegularLight; 32" halign="center" name="description" position="38,1018" size="810,38" transparent="1" />
     <ePixmap alphatest="blend" pixmap="maxHD/buttons/red1.png" position="38,1058" size="375,3" />
     <ePixmap alphatest="blend" pixmap="maxHD/buttons/green1.png" position="473,1058" size="375,3" />
-    <widget backgroundColor="black" font="RegularLight; 38" halign="center" name="red" position="38,1020" size="375,38" transparent="1" zPosition="1" />
-    <widget backgroundColor="black" font="RegularLight; 38" halign="center" name="green" position="473,1020" size="375,38" transparent="1" zPosition="1" />
+    <widget backgroundColor="black" font="RegularLight; 38" halign="center" position="38,1020" render="Label" size="375,38" source="key_red" transparent="1" zPosition="1" />
+    <widget backgroundColor="black" font="RegularLight; 38" halign="center" position="473,1020" render="Label" size="375,38" source="key_green" transparent="1" zPosition="1" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="PluginBrowser" position="0,0" size="1920,1080" title="Plugin browser">
     <eLabel backgroundColor="maxBackground" position="14,5" size="855,95" transparent="0" zPosition="-10" />
@@ -3700,14 +3700,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <ePixmap alphatest="blend" pixmap="maxHD/line/line105.png" position="1907,918" size="2,158" zPosition="2" />
     <!--Uhr */-->
     <eLabel backgroundColor="black" font="Regular; 68" position="38,15" size="810,75" text="Plugin browser" transparent="1" valign="center" zPosition="10" halign="center" foregroundColor="maxBlueMax" />
-    <widget backgroundColor="maxBackground" enableWrapAround="1" name="list" position="38,135" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="810,825" transparent="1" selectionPixmap="maxHD/sel/bar1280.png" />
+    <widget backgroundColor="maxBackground" enableWrapAround="1" name="pluginList" position="38,135" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="810,825" transparent="1" selectionPixmap="maxHD/sel/bar1280.png" />
     <widget backgroundColor="black" font="RegularLight; 32" halign="left" name="quickselect" position="38,970" size="810,38" transparent="1" />
     <widget backgroundColor="black" font="RegularLight; 32" halign="center" name="description" position="38,1018" size="810,38" transparent="1" />
     <!-- /*Buttons-->
     <ePixmap alphatest="blend" pixmap="maxHD/buttons/red1.png" position="38,1058" size="375,3" />
     <ePixmap alphatest="blend" pixmap="maxHD/buttons/green1.png" position="473,1058" size="375,3" />
-    <widget backgroundColor="black" font="RegularLight; 38" halign="center" name="red" position="38,1020" size="375,38" transparent="1" zPosition="1" />
-    <widget backgroundColor="black" font="RegularLight; 38" halign="center" name="green" position="473,1020" size="375,38" transparent="1" zPosition="1" />
+    <widget backgroundColor="black" font="RegularLight; 38" halign="center" position="38,1020" render="Label" size="375,38" source="key_red" transparent="1" zPosition="1" />
+    <widget backgroundColor="black" font="RegularLight; 38" halign="center" position="473,1020" render="Label" size="375,38" source="key_green" transparent="1" zPosition="1" />
     <!--Button */-->
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="PluginDownloadBrowser" position="0,0" size="1920,1080" title="Downloadable plugins">
