@@ -923,7 +923,7 @@
     <ePixmap alphatest="blend" pixmap="maxHD/line/line105.png" position="1907,918" size="2,158" zPosition="2" />
     <!--Uhr */-->
     <widget font="Regular; 68" position="38,15" render="Label" size="615,75" source="Title" transparent="1" valign="center" zPosition="10" halign="center" foregroundColor="maxBlueMax" backgroundColor="black" />
-    <widget enableWrapAround="1" position="38,113" render="Listbox" scrollbarMode="showNever" size="615,960" source="menu" transparent="1" zPosition="1" selectionPixmap="maxHD/sel/bar1280.png">
+    <widget enableWrapAround="1" position="38,113" render="Listbox" scrollbarMode="showNever" size="615,960" source="menu" transparent="1" zPosition="1" selectionPixmap="maxHD/sel/bar1280.png" itemHeight="60" font="Regular; 42">
       <convert type="StringList" />
     </widget>
     <widget name="menuimage" pixmap="maxHD/icons/tv.png" position="0,0" size="1,1" transparent="1" zPosition="-99" />
@@ -953,7 +953,7 @@
     <ePixmap alphatest="blend" pixmap="maxHD/line/line105.png" position="1907,918" size="2,158" zPosition="2" />
     <!--Uhr */-->
     <widget font="Regular; 68" position="38,15" render="Label" size="615,75" source="Title" transparent="1" valign="center" zPosition="10" halign="center" foregroundColor="maxBlueMax" backgroundColor="black" />
-    <widget source="menu" render="Listbox" position="38,120" size="615,945" itemHeight="54" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="1" zPosition="1" selectionPixmap="maxHD/sel/bar1280.png">
+    <widget source="menu" render="Listbox" position="38,120" size="615,945" itemHeight="60" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="1" zPosition="1" selectionPixmap="maxHD/sel/bar1280.png" font="Regular; 42">
       <convert type="StringList" />
     </widget>
     <widget name="menuimage" pixmap="maxHD/icons/tv.png" position="0,0" size="1,1" transparent="1" zPosition="-99" />
@@ -983,7 +983,7 @@
     <ePixmap alphatest="blend" pixmap="maxHD/line/line105.png" position="1907,918" size="2,158" zPosition="2" />
     <!--Uhr */-->
     <widget font="Regular; 68" position="38,15" render="Label" size="615,75" source="Title" transparent="1" valign="center" zPosition="10" halign="center" foregroundColor="maxBlueMax" backgroundColor="black" />
-    <widget source="menu" render="Listbox" position="38,128" size="615,930" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
+    <widget source="menu" render="Listbox" position="38,128" size="615,930" scrollbarMode="showNever" enableWrapAround="1" transparent="1" itemHeight="60" selectionPixmap="maxHD/sel/bar1280.png" font="Regular; 42">
       <convert type="StringList" />
     </widget>
     <widget name="menuimage" pixmap="maxHD/icons/tv.png" position="0,0" size="1,1" transparent="1" zPosition="-99" />
@@ -1013,7 +1013,7 @@
     <ePixmap alphatest="blend" pixmap="maxHD/line/line105.png" position="1907,918" size="2,158" zPosition="2" />
     <!--Uhr */-->
     <widget font="Regular; 68" position="38,15" render="Label" size="615,75" source="Title" transparent="1" valign="center" zPosition="10" halign="center" foregroundColor="maxBlueMax" backgroundColor="black" />
-    <widget enableWrapAround="1" position="38,120" render="Listbox" scrollbarMode="showNever" size="615,945" source="menu" transparent="1" zPosition="1" selectionPixmap="maxHD/sel/bar1280.png">
+    <widget enableWrapAround="1" position="38,120" render="Listbox" scrollbarMode="showNever" size="615,945" source="menu" transparent="1" zPosition="1" selectionPixmap="maxHD/sel/bar1280.png" itemHeight="60" font="Regular; 42">
       <convert type="StringList" />
     </widget>
     <widget name="menuimage" pixmap="maxHD/icons/tv.png" position="0,0" size="1,1" transparent="1" zPosition="-99" />
@@ -1055,7 +1055,7 @@
     <ePixmap alphatest="blend" pixmap="maxHD/line/line105.png" position="1907,918" size="2,158" zPosition="2" />
     <!--Uhr */-->
     <widget font="Regular; 68" position="38,15" render="Label" size="810,75" source="Title" transparent="1" valign="center" zPosition="10" halign="center" foregroundColor="maxBlueMax" backgroundColor="black" />
-    <widget enableWrapAround="1" position="38,120" render="Listbox" scrollbarMode="showNever" size="810,150" source="menu" transparent="1" zPosition="1" selectionPixmap="maxHD/sel/bar1280.png">
+    <widget enableWrapAround="1" position="38,120" render="Listbox" scrollbarMode="showNever" size="810,150" source="menu" transparent="1" zPosition="1" selectionPixmap="maxHD/sel/bar1280.png" itemHeight="50" font="Regular; 36">
       <convert type="StringList" />
     </widget>
     <ePixmap position="233,315" size="75,75" zPosition="6" pixmap="maxHD/icons/fan.png" alphatest="blend" />
@@ -1139,7 +1139,7 @@
     <ePixmap alphatest="blend" pixmap="maxHD/line/line105.png" position="1907,918" size="2,158" zPosition="2" />
     <!--Uhr */-->
     <widget font="Regular; 68" position="38,15" render="Label" size="615,75" source="Title" transparent="1" valign="center" zPosition="10" halign="center" foregroundColor="maxBlueMax" backgroundColor="black" />
-    <widget enableWrapAround="1" position="38,120" render="Listbox" scrollbarMode="showNever" size="615,945" source="menu" transparent="1" selectionPixmap="maxHD/sel/bar1280.png">
+    <widget enableWrapAround="1" position="38,120" render="Listbox" scrollbarMode="showNever" size="615,945" source="menu" transparent="1" selectionPixmap="maxHD/sel/bar1280.png" itemHeight="60" font="Regular; 42">
       <convert type="StringList" />
     </widget>
     <widget name="menuimage" pixmap="maxHD/icons/tv.png" position="0,0" size="1,1" transparent="1" zPosition="-99" />
@@ -1156,7 +1156,7 @@
     <ePixmap alphatest="blend" pixmap="maxHD/line/line645.png" position="14,110" size="2,966" zPosition="2" />
     <ePixmap alphatest="blend" pixmap="maxHD/line/line645.png" position="674,110" size="2,966" zPosition="2" />
     <widget font="Regular; 68" position="38,15" render="Label" size="615,75" source="Title" transparent="1" valign="center" zPosition="1" halign="center" foregroundColor="maxBlueMax" backgroundColor="black" />
-    <widget source="menu" render="Listbox" position="38,120" size="615,945" scrollbarMode="showNever" enableWrapAround="1" transparent="1" zPosition="1" selectionPixmap="maxHD/sel/bar1280.png">
+    <widget source="menu" render="Listbox" position="38,120" size="615,945" scrollbarMode="showNever" enableWrapAround="1" transparent="1" zPosition="1" selectionPixmap="maxHD/sel/bar1280.png" itemHeight="60" font="Regular; 42">
       <convert type="StringList" />
     </widget>
     <!-- /*Uhr-->
@@ -1199,7 +1199,7 @@
     <ePixmap alphatest="blend" pixmap="maxHD/line/line105.png" position="1907,918" size="2,158" zPosition="2" />
     <!--Uhr */-->
     <widget font="Regular; 60" position="38,15" render="Label" size="615,75" source="Title" transparent="1" valign="center" zPosition="10" halign="center" foregroundColor="maxBlueMax" backgroundColor="black" />
-    <widget enableWrapAround="1" position="38,120" render="Listbox" scrollbarMode="showNever" size="615,945" source="menu" transparent="1" zPosition="1" selectionPixmap="maxHD/sel/bar1280.png">
+    <widget enableWrapAround="1" position="38,120" render="Listbox" scrollbarMode="showNever" size="615,945" source="menu" transparent="1" zPosition="1" selectionPixmap="maxHD/sel/bar1280.png" itemHeight="60" font="Regular; 42">
       <convert type="StringList" />
     </widget>
     <widget name="menuimage" pixmap="maxHD/icons/tv.png" position="0,0" size="1,1" transparent="1" zPosition="-99" />
@@ -5744,7 +5744,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <ePixmap alphatest="blend" pixmap="maxHD/line/line105.png" position="1907,918" size="2,158" zPosition="2" />
     <!--Uhr */-->
     <eLabel backgroundColor="maxBackground" font="Regular; 68" position="38,15" size="810,75" text="Exif Info" transparent="1" foregroundColor="maxBlueMax" halign="center" />
-    <widget backgroundColor="maxBackground" position="38,128" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" selectionDisabled="1" size="810,855" source="menu" transparent="1" selectionPixmap="maxHD/sel/bar1280.png">
+    <widget backgroundColor="maxBackground" position="38,128" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" selectionDisabled="1" size="810,855" source="menu" transparent="1" selectionPixmap="maxHD/sel/bar1280.png" itemHeight="56" font="Regular; 40">
       <convert type="StringList" />
     </widget>
     <!-- /*Buttons-->
@@ -6219,10 +6219,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <ePixmap alphatest="blend" pixmap="maxHD/line/line105.png" position="1907,918" size="2,158" zPosition="2" />
     <!--Uhr */-->
     <eLabel backgroundColor="maxBackground" font="Regular; 68" position="38,15" size="810,75" text="Softwaremanager" transparent="1" foregroundColor="maxBlueMax" halign="center" />
-    <widget source="menu" render="Listbox" position="38,128" size="810,533" scrollbarMode="showNever" enableWrapAround="1" transparent="1" selectionPixmap="maxHD/sel/bar1280.png">
+    <widget source="menu" render="Listbox" position="38,128" size="810,533" scrollbarMode="showNever" enableWrapAround="1" transparent="1" selectionPixmap="maxHD/sel/bar1280.png" itemHeight="50" font="Regular; 36">
       <convert type="StringList" />
     </widget>
-    <widget source="menu" render="Listbox" position="38,660" size="810,330" zPosition="3" scrollbarMode="showNever" selectionDisabled="1" foregroundColor="maxForeground" backgroundColor="maxBackground" transparent="1" selectionPixmap="maxHD/sel/bar1280x170.png">
+    <widget source="menu" render="Listbox" position="38,660" size="810,330" zPosition="3" scrollbarMode="showNever" selectionDisabled="1" foregroundColor="maxForeground" backgroundColor="maxBackground" transparent="1" selectionPixmap="maxHD/sel/bar1280x170.png" itemHeight="46" font="Regular; 34">
       <convert type="StringList" />
     </widget>
     <!-- /*Buttons-->
@@ -7021,7 +7021,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <!--Uhr */-->
     <widget source="title" render="Label" position="38,15" size="870,75" font="Regular; 68" foregroundColor="maxBlueMax" backgroundColor="maxBackground" transparent="1" halign="center" />
     <widget name="header" position="38,119" size="870,90" font="Regular; 45" halign="center" foregroundColor="maxGreen1" backgroundColor="black" transparent="1" />
-    <widget source="menu" render="Listbox" position="38,255" size="870,720" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="1" selectionPixmap="maxHD/sel/bar1280.png">
+    <widget source="menu" render="Listbox" position="38,255" size="870,720" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="1" selectionPixmap="maxHD/sel/bar1280.png" itemHeight="52" font="Regular; 38">
       <convert type="StringList" />
     </widget>
     <!-- /*Buttons-->
@@ -7248,7 +7248,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <ePixmap alphatest="blend" pixmap="maxHD/line/line105.png" position="1907,918" size="2,158" zPosition="2" />
     <!--Uhr */-->
     <widget backgroundColor="maxBackground" font="Regular; 68" position="38,15" render="Label" size="810,75" source="title" transparent="1" foregroundColor="maxBlueMax" halign="center" />
-    <widget position="38,120" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="810,855" source="menu" transparent="1" selectionPixmap="maxHD/sel/bar1280.png">
+    <widget position="38,120" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="810,855" source="menu" transparent="1" selectionPixmap="maxHD/sel/bar1280.png" itemHeight="56" font="Regular; 40">
       <convert type="StringList" />
     </widget>
     <!-- /*Buttons-->
@@ -7336,7 +7336,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <!--Uhr */-->
     <widget backgroundColor="maxBackground" font="Regular; 68" position="38,15" render="Label" size="810,75" source="title" transparent="1" foregroundColor="maxBlueMax" halign="center" />
     <widget backgroundColor="maxBackground" font="RegularLight; 38" name="status" position="38,122" size="810,53" transparent="1" foregroundColor="maxGreen1" />
-    <widget position="38,218" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="810,765" source="menu" transparent="1" selectionPixmap="maxHD/sel/bar1280.png">
+    <widget position="38,218" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="810,765" source="menu" transparent="1" selectionPixmap="maxHD/sel/bar1280.png" itemHeight="52" font="Regular; 38">
       <convert type="StringList" />
     </widget>
     <!-- /*Buttons-->
@@ -7757,7 +7757,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget backgroundColor="black" font="RegularLight; 38" halign="center" position="30,1020" render="Label" size="270,38" source="key_red" transparent="1" zPosition="1" />
     <widget backgroundColor="black" font="RegularLight; 38" halign="center" position="308,1020" render="Label" size="270,38" source="key_green" transparent="1" zPosition="1" />
     <widget backgroundColor="black" font="RegularLight; 38" halign="center" position="585,1020" render="Label" size="270,38" source="key_yellow" transparent="1" zPosition="1" />
-    <widget position="38,120" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="810,864" source="menu" selectionPixmap="maxHD/sel/bar1280.png" transparent="1">
+    <widget position="38,120" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="810,864" source="menu" selectionPixmap="maxHD/sel/bar1280.png" transparent="1" itemHeight="56" font="Regular; 40">
       <convert type="StringList" />
     </widget>
   </screen>
@@ -7914,7 +7914,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <ePixmap alphatest="blend" pixmap="maxHD/line/line105.png" position="1907,918" size="2,158" zPosition="2" />
     <!--Uhr */-->
     <widget backgroundColor="maxBackground" font="Regular; 68" position="38,15" render="Label" size="870,75" source="title" transparent="1" foregroundColor="maxBlueMax" halign="center" />
-    <widget position="36,128" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="870,855" source="menu" transparent="1" selectionPixmap="maxHD/sel/bar1280x110.png">
+    <widget position="36,128" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="870,855" source="menu" transparent="1" selectionPixmap="maxHD/sel/bar1280x110.png" itemHeight="56" font="Regular; 40">
       <convert type="StringList" />
     </widget>
     <!-- /*Buttons-->
@@ -9023,7 +9023,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <ePixmap alphatest="blend" pixmap="maxHD/line/line105.png" position="1907,918" size="2,158" zPosition="2" />
     <!--Uhr */-->
     <widget source="Title" render="Label" position="38,15" size="870,75" font="Regular; 45" foregroundColor="maxBlueMax" backgroundColor="maxBackground" transparent="1" halign="center" />
-    <widget source="menu" render="Listbox" position="38,128" size="870,855" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="1" enableWrapAround="1" selectionPixmap="maxHD/sel/bar1280.png">
+    <widget source="menu" render="Listbox" position="38,128" size="870,855" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="1" enableWrapAround="1" selectionPixmap="maxHD/sel/bar1280.png" itemHeight="56" font="Regular; 40">
       <convert type="StringList" />
     </widget>
     <!-- /*Buttons-->
