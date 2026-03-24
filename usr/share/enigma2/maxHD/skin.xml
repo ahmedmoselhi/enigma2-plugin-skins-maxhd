@@ -891,27 +891,7 @@
     </widget>
     <ePixmap alphatest="blend" pixmap="maxHD/line/line570.png" position="14,518" size="855,2" zPosition="1" />
     <widget source="streams" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" position="38,548" size="810,510" zPosition="3" transparent="1" selectionPixmap="maxHD/sel/bar1280.png">
-      <convert type="TemplatedMultiContent">
-				{"templates":
-					{"default": (25, [ 
-						MultiContentEntryText(pos = (0, 0), size = (35, 25),font = 0, flags = RT_HALIGN_LEFT,text = 1), # key,
-						MultiContentEntryText(pos = (40, 0),size = (60, 25),font = 0, flags = RT_HALIGN_LEFT,text = 2), # number,
-						MultiContentEntryText(pos = (110, 0), size = (120, 25), font = 0, flags = RT_HALIGN_LEFT,text = 3), # description,
-						MultiContentEntryText(pos = (240, 0), size = (200, 25), font = 0, flags = RT_HALIGN_LEFT,text = 4), # language,
-						MultiContentEntryText(pos = (450, 4), size = (90, 25),font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
-					], True, "showNever"),
-					"notselected": (25, [ 
-						MultiContentEntryText(pos = (0, 0), size = (35, 25),font = 0, flags = RT_HALIGN_LEFT,text = 1), # key,
-						MultiContentEntryText(pos = (40, 0),size = (60, 25),font = 0, flags = RT_HALIGN_LEFT,text = 2), # number,
-						MultiContentEntryText(pos = (110, 0), size = (120, 25), font = 0, flags = RT_HALIGN_LEFT,text = 3), # description,
-						MultiContentEntryText(pos = (240, 0), size = (200, 25), font = 0, flags = RT_HALIGN_LEFT,text = 4), # language,
-						MultiContentEntryText(pos = (450, 4), size = (90, 25),font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
-					], False, "showNever")
-					},
-				"fonts": [gFont("Regular", 20), gFont("Regular", 16)],
-				"itemHeight": 25
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="Mute" position="1575,90" size="150,150" title="Mute" zPosition="11">
@@ -944,12 +924,7 @@
     <!--Uhr */-->
     <widget font="Regular; 68" position="38,15" render="Label" size="615,75" source="Title" transparent="1" valign="center" zPosition="10" halign="center" foregroundColor="maxBlueMax" backgroundColor="black" />
     <widget enableWrapAround="1" position="38,113" render="Listbox" scrollbarMode="showNever" size="615,960" source="menu" transparent="1" zPosition="1" selectionPixmap="maxHD/sel/bar1280.png">
-      <convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (10, 5), size = (500, 50), flags = RT_HALIGN_LEFT, text = 0) ],
-				"fonts": [gFont("RegularLight", 30)],
-				"itemHeight": 49
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <widget name="menuimage" pixmap="maxHD/icons/tv.png" position="0,0" size="1,1" transparent="1" zPosition="-99" />
   </screen>
@@ -1009,12 +984,7 @@
     <!--Uhr */-->
     <widget font="Regular; 68" position="38,15" render="Label" size="615,75" source="Title" transparent="1" valign="center" zPosition="10" halign="center" foregroundColor="maxBlueMax" backgroundColor="black" />
     <widget source="menu" render="Listbox" position="38,128" size="615,930" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
-      <convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (15, 5), size = (372, 30), flags = RT_HALIGN_LEFT, text = 0) ],
-				"fonts": [gFont("RegularLight", 30)],
-				"itemHeight": 40
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <widget name="menuimage" pixmap="maxHD/icons/tv.png" position="0,0" size="1,1" transparent="1" zPosition="-99" />
   </screen>
@@ -1044,12 +1014,7 @@
     <!--Uhr */-->
     <widget font="Regular; 68" position="38,15" render="Label" size="615,75" source="Title" transparent="1" valign="center" zPosition="10" halign="center" foregroundColor="maxBlueMax" backgroundColor="black" />
     <widget enableWrapAround="1" position="38,120" render="Listbox" scrollbarMode="showNever" size="615,945" source="menu" transparent="1" zPosition="1" selectionPixmap="maxHD/sel/bar1280.png">
-      <convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (10, 5), size = (500, 50), flags = RT_HALIGN_LEFT, text = 0) ],
-				"fonts": [gFont("RegularLight", 30)],
-				"itemHeight": 49
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <widget name="menuimage" pixmap="maxHD/icons/tv.png" position="0,0" size="1,1" transparent="1" zPosition="-99" />
   </screen>
@@ -1091,12 +1056,7 @@
     <!--Uhr */-->
     <widget font="Regular; 68" position="38,15" render="Label" size="810,75" source="Title" transparent="1" valign="center" zPosition="10" halign="center" foregroundColor="maxBlueMax" backgroundColor="black" />
     <widget enableWrapAround="1" position="38,120" render="Listbox" scrollbarMode="showNever" size="810,150" source="menu" transparent="1" zPosition="1" selectionPixmap="maxHD/sel/bar1280.png">
-      <convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (10, 5), size = (500, 50), flags = RT_HALIGN_LEFT, text = 0) ],
-				"fonts": [gFont("RegularLight", 30)],
-				"itemHeight": 49
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <ePixmap position="233,315" size="75,75" zPosition="6" pixmap="maxHD/icons/fan.png" alphatest="blend" />
     <widget source="session.CurrentService" render="Label" position="330,336" size="150,39" font="Regular; 35" backgroundColor="black" transparent="1" halign="left" zPosition="6" valign="center" foregroundColor="yellow1">
@@ -1180,12 +1140,7 @@
     <!--Uhr */-->
     <widget font="Regular; 68" position="38,15" render="Label" size="615,75" source="Title" transparent="1" valign="center" zPosition="10" halign="center" foregroundColor="maxBlueMax" backgroundColor="black" />
     <widget enableWrapAround="1" position="38,120" render="Listbox" scrollbarMode="showNever" size="615,945" source="menu" transparent="1" selectionPixmap="maxHD/sel/bar1280.png">
-      <convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (10, 5), size = (500, 50), flags = RT_HALIGN_LEFT, text = 0) ],
-				"fonts": [gFont("RegularLight", 30)],
-				"itemHeight": 49
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <widget name="menuimage" pixmap="maxHD/icons/tv.png" position="0,0" size="1,1" transparent="1" zPosition="-99" />
   </screen>
@@ -1202,13 +1157,7 @@
     <ePixmap alphatest="blend" pixmap="maxHD/line/line645.png" position="674,110" size="2,966" zPosition="2" />
     <widget font="Regular; 68" position="38,15" render="Label" size="615,75" source="Title" transparent="1" valign="center" zPosition="1" halign="center" foregroundColor="maxBlueMax" backgroundColor="black" />
     <widget source="menu" render="Listbox" position="38,120" size="615,945" scrollbarMode="showNever" enableWrapAround="1" transparent="1" zPosition="1" selectionPixmap="maxHD/sel/bar1280.png">
-      <convert type="TemplatedMultiContent">
-				{
-					"template": [ MultiContentEntryText(pos = (10, 5), size = (500, 50), flags = RT_HALIGN_LEFT, text = 0) ],
-					"fonts": [gFont("RegularLight", 30)],
-					"itemHeight": 49
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <!-- /*Uhr-->
     <widget source="global.CurrentTime" render="Label" position="1479,920" size="420,105" font="Regular; 120" halign="center" backgroundColor="black" transparent="1" foregroundColor="maxAccent1" valign="center">
@@ -1251,12 +1200,7 @@
     <!--Uhr */-->
     <widget font="Regular; 60" position="38,15" render="Label" size="615,75" source="Title" transparent="1" valign="center" zPosition="10" halign="center" foregroundColor="maxBlueMax" backgroundColor="black" />
     <widget enableWrapAround="1" position="38,120" render="Listbox" scrollbarMode="showNever" size="615,945" source="menu" transparent="1" zPosition="1" selectionPixmap="maxHD/sel/bar1280.png">
-      <convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (10, 5), size = (500, 50), flags = RT_HALIGN_LEFT, text = 0) ],
-				"fonts": [gFont("RegularLight", 30)],
-				"itemHeight": 49
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <widget name="menuimage" pixmap="maxHD/icons/tv.png" position="0,0" size="1,1" transparent="1" zPosition="-99" />
   </screen>
@@ -1662,16 +1606,7 @@
     <eLabel backgroundColor="maxForeground" position="1208,195" size="630,660" zPosition="1" />
     <eLabel backgroundColor="maxBackground" position="1211,198" size="624,654" zPosition="2" />
     <widget position="1223,210" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="600,630" source="cutlist" zPosition="3">
-      <convert type="TemplatedMultiContent">
-				{"template":
-					[
-						MultiContentEntryText(pos=(0,4), size=(280, 22), text = 1, flags = RT_HALIGN_CENTER, backcolor = MultiContentTemplateColor(3)),
-						MultiContentEntryText(pos=(280,4), size=(100, 22), text = 2, flags = RT_HALIGN_CENTER, backcolor = MultiContentTemplateColor(3))
-					],
-					"fonts": [gFont("Regular", 23)],
-					"itemHeight": 30
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <ePixmap alphatest="blend" pixmap="maxHD/buttons/dvr.png" position="1343,866" size="390,48" />
   </screen>
@@ -3111,15 +3046,7 @@
     <!--Uhr */-->
     <eLabel backgroundColor="maxBackground" font="Regular; 68" position="38,15" size="810,68" text="Language selection" transparent="1" foregroundColor="maxBlueMax" halign="center" />
     <widget position="38,128" render="Listbox" size="810,930" source="languages" transparent="1" zPosition="3" selectionPixmap="maxHD/sel/bar1280.png">
-      <convert type="TemplatedMultiContent">
-				{"template": [
-				MultiContentEntryText(pos = (130, 17), size = (550, 60), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
-				MultiContentEntryPixmap(pos = (20, 10), size = (60, 40), png = 2), # index 2 is the pixmap
-				],
-				"fonts": [gFont("RegularLight", 26)],
-				"itemHeight": 60
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="LocationBox" position="0,0" size="1920,1080" title="Location Box">
@@ -3436,17 +3363,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <!--Uhr */-->
     <eLabel backgroundColor="maxBackground" font="Regular; 68" position="38,15" size="870,75" text="Select Network Adapter" transparent="1" foregroundColor="maxBlueMax" halign="center" />
     <widget backgroundColor="maxBackground" enableWrapAround="1" position="38,128" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="870,765" source="list" transparent="1" selectionPixmap="maxHD/sel/bar1280x110.png">
-      <convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (54, 54), png = 3), # index 3 is the interface pixmap
-					MultiContentEntryPixmapAlphaTest(pos = (71, 46), size = (15, 16), png = 4), # index 4 is the default pixmap
-					MultiContentEntryText(pos = (100, 2), size = (520, 35), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1), # index 1 is the interfacename
-					MultiContentEntryText(pos = (100, 42), size = (520, 25), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_BOTTOM, text = 2), # index 2 is the description
-				],
-				"fonts": [gFont("RegularLight", 28),gFont("RegularLight", 20)],
-				"itemHeight": 75
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <widget backgroundColor="black" font="RegularLight; 35" halign="center" name="introduction" position="38,923" size="870,68" transparent="1" foregroundColor="maxGreen1" />
     <!-- /*Buttons-->
@@ -3569,15 +3486,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <!--Uhr */-->
     <eLabel backgroundColor="maxBackground" font="Regular; 68" position="38,15" size="810,75" text="Choose Tuner" transparent="1" foregroundColor="maxBlueMax" halign="center" />
     <widget enableWrapAround="1" position="38,128" render="Listbox" size="810,930" source="nimlist" transparent="1" selectionPixmap="maxHD/sel/bar1280x110.png">
-      <convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(pos = (10, 8), size = (680, 30), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
-						MultiContentEntryText(pos = (50, 43), size = (640, 45), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER | RT_WRAP, text = 2), # index 2 is a description of the nim settings,
-					],
-				 "fonts": [gFont("RegularLight", 26), gFont("RegularLight", 20)],
-				 "itemHeight": 110
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="NimSetup" position="0,0" size="1920,1080" title="Reception Settings">
@@ -4885,18 +4794,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel backgroundColor="black" font="Regular; 68" position="38,15" size="810,75" text="Choose a Wireless Network" transparent="1" foregroundColor="maxBlueMax" halign="center" />
     <widget backgroundColor="black" font="RegularLight; 38" position="38,119" render="Label" size="810,60" source="info" transparent="1" foregroundColor="maxGreen1" halign="center" />
     <widget position="38,210" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="810,765" source="list" transparent="1" selectionPixmap="maxHD/sel/bar1280x110.png">
-      <convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(pos = (10, 8), size = (650, 35), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the essid
-						MultiContentEntryText(pos = (10, 43), size = (210, 25), font=1, flags = RT_HALIGN_LEFT, text = 5), # index 5 is the interface
-						MultiContentEntryText(pos = (230, 43), size = (210, 25), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 0 is the encryption
-						MultiContentEntryText(pos = (450, 8), size = (220, 25), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 0 is the signal
-						MultiContentEntryText(pos = (450, 43), size = (220, 25), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 0 is the maxrate
-					],
-				"fonts": [gFont("RegularLight", 28),gFont("RegularLight", 20)],
-				"itemHeight": 75
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <!-- /*Buttons-->
     <ePixmap alphatest="blend" pixmap="maxHD/buttons/red1.png" position="30,1058" size="270,3" />
@@ -5343,12 +5241,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget backgroundColor="black" font="RegularLight; 38" name="languagetext" position="38,1020" size="300,38" transparent="1" halign="center" />
     <widget backgroundColor="maxBackground" font="RegularLight;40" name="text" position="285,120" size="638,495" transparent="1" />
     <widget position="285,645" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="638,338" source="list" transparent="1" zPosition="13">
-      <convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (20, 2), size = (760, 29), flags = RT_HALIGN_LEFT, text = 0) ],
-				"fonts": [gFont("RegularLight", 26)],
-				"itemHeight": 32
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <widget itemHeight="58" name="config" position="285,645" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="638,338" transparent="1" zPosition="14" selectionPixmap="maxHD/sel/bar1280.png" />
   </screen>
@@ -5568,16 +5461,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <!--Uhr */-->
     <eLabel backgroundColor="black" font="Regular; 68" position="38,15" size="810,75" text="AutoMountManager" transparent="1" foregroundColor="maxBlueMax" halign="center" />
     <widget backgroundColor="maxBackground" position="38,128" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="810,765" source="config" transparent="1" selectionPixmap="maxHD/sel/bar1280.png">
-      <convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(pos = (60, 5), size = (620, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
-						MultiContentEntryText(pos = (70, 35), size = (610, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 3 is the Description
-						MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # index 4 is the pixmap
-					],
-				"fonts": [gFont("Regular", 26),gFont("Regular", 18)],
-				"itemHeight": 60
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <widget backgroundColor="black" font="Regular; 38" halign="center" position="38,923" render="Label" size="810,68" source="introduction" transparent="1" foregroundColor="maxGreen1" />
     <!-- /*Buttons-->
@@ -5629,19 +5513,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget font="RegularLight; 38" halign="center" position="210,128" render="Label" size="465,120" source="legend2" transparent="1" valign="center" backgroundColor="black" />
     <widget font="RegularLight; 38" halign="center" position="683,128" render="Label" size="165,120" source="legend3" transparent="1" valign="center" foregroundColor="maxGreen1" backgroundColor="black" />
     <widget position="38,293" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="810,600" source="config" transparent="1" selectionPixmap="maxHD/sel/bar1280.png">
-      <convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryPixmapAlphaTest(pos = (40, 6), size = (48, 48), png = 0), # index 0 is the isMounted pixmap
-						MultiContentEntryText(pos = (210, 5), size = (200, 28), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the sharename
-						MultiContentEntryText(pos = (390, 8), size = (250, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the IPdescription
-						MultiContentEntryText(pos = (210, 35), size = (350, 20), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the DIRdescription
-						MultiContentEntryPixmapAlphaTest(pos = (600, 15), size = (48, 48), png = 4), # index 4 is the activepng pixmap
-						MultiContentEntryPixmapAlphaTest(pos = (630, 6), size = (48, 48), png = 5), # index 4 is the mounttype pixmap
-					],
-				"fonts": [gFont("RegularLight", 26),gFont("RegularLight", 18)],
-				"itemHeight": 60
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <widget backgroundColor="black" font="RegularLight; 45" halign="center" position="38,923" render="Label" size="810,68" source="introduction" transparent="1" foregroundColor="maxGreen1" />
     <!-- /*Buttons-->
@@ -5687,19 +5559,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <!--Uhr */-->
     <eLabel backgroundColor="maxBackground" font="Regular; 68" position="38,15" size="870,75" text="Network Neighbourhood" transparent="1" foregroundColor="maxBlueMax" halign="center" />
     <widget position="38,128" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="870,765" source="list" transparent="1" zPosition="3" selectionPixmap="maxHD/sel/bar1280.png">
-      <convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 1), # index 1 is the expandable/expanded/verticalline icon
-						MultiContentEntryText(pos = (70, 4), size = (600, 26), font=2, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the Hostname
-						MultiContentEntryText(pos = (160, 5), size = (510, 25), font=0, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the sharename
-						MultiContentEntryText(pos = (160, 32), size = (510, 17), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is the sharedescription
-						MultiContentEntryPixmapAlphaTest(pos = (65, 6), size = (48, 48), png = 5), # index 5 is the nfs/cifs icon
-						MultiContentEntryPixmapAlphaTest(pos = (110, 6), size = (48, 48), png = 6), # index 6 is the isMounted icon
-					],
-				"fonts": [gFont("RegularLight", 22),gFont("RegularLight", 17),gFont("RegularLight", 24)],
-				"itemHeight": 60
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <widget font="Regular; 38" halign="center" position="38,921" render="Label" size="870,68" source="infotext" transparent="1" zPosition="3" foregroundColor="maxGreen1" backgroundColor="black" />
     <!-- /*Buttons-->
@@ -5793,15 +5653,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <!--Uhr */-->
     <eLabel backgroundColor="maxBackground" font="Regular; 68" position="38,15" size="810,75" text="UserManager" transparent="1" foregroundColor="maxBlueMax" halign="center" />
     <widget position="38,128" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="810,765" source="config" transparent="1" zPosition="3" selectionPixmap="maxHD/sel/bar1280.png">
-      <convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(pos = (80, 4), size = (590, 50), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-						MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # index 4 is the status pixmap
-					],
-				"fonts": [gFont("RegularLight", 40)],
-				"itemHeight": 60
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <widget backgroundColor="black" font="RegularLight; 38" halign="center" position="38,923" render="Label" size="810,68" source="introduction" transparent="1" foregroundColor="maxGreen1" />
     <!-- /*Buttons-->
@@ -5893,14 +5745,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <!--Uhr */-->
     <eLabel backgroundColor="maxBackground" font="Regular; 68" position="38,15" size="810,75" text="Exif Info" transparent="1" foregroundColor="maxBlueMax" halign="center" />
     <widget backgroundColor="maxBackground" position="38,128" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" selectionDisabled="1" size="810,855" source="menu" transparent="1" selectionPixmap="maxHD/sel/bar1280.png">
-      <convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos = (10, 5), size = (350, 30), flags = RT_HALIGN_LEFT, text = 0),
-					MultiContentEntryText(pos = (360, 7), size = (310, 30), flags = RT_HALIGN_LEFT, text = 1)],
-					"fonts": [gFont("RegularLight", 26)],
-					"itemHeight": 35
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <!-- /*Buttons-->
     <ePixmap alphatest="blend" pixmap="maxHD/buttons/red1.png" position="38,1058" size="300,3" />
@@ -6107,17 +5952,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <!--Uhr */-->
     <eLabel backgroundColor="black" font="Regular; 68" position="38,15" size="810,75" text="PacketManager" transparent="1" foregroundColor="maxBlueMax" halign="center" />
     <widget position="38,128" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="810,855" source="list" transparent="1" selectionPixmap="maxHD/sel/bar1280.png">
-      <convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryPixmapAlphaTest(pos = (18, 5), size = (48, 48), png = 4), # index 4 is the status pixmap
-						MultiContentEntryText(pos = (90, 5), size = (590, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-						MultiContentEntryText(pos = (100, 35), size = (590, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
-						MultiContentEntryPixmapAlphaTest(pos = (5, 58), size = (0, 0), png = 5), # index 4 is the div pixmap
-					],
-				"fonts": [gFont("RegularLight", 26),gFont("Regular", 18)],
-				"itemHeight": 60
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <!-- /*Buttons-->
     <ePixmap alphatest="blend" pixmap="maxHD/buttons/red1.png" position="38,1058" size="300,3" />
@@ -6162,22 +5997,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <!--Uhr */-->
     <eLabel backgroundColor="maxBackground" font="Regular; 68" position="38,15" size="870,75" text="Plugin manager" transparent="1" foregroundColor="maxBlueMax" halign="center" />
     <widget position="38,128" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="870,765" source="list" transparent="1" selectionPixmap="maxHD/sel/bar1280x110.png">
-      <convert type="TemplatedMultiContent">
-			{"templates":
-				{"default": (105,[
-						MultiContentEntryPixmapAlphaTest(pos = (18, 14), size = (48, 48), png = 5), # index 5 is the status pixmap
-						MultiContentEntryText(pos = (90, 5), size = (565, 36), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-						MultiContentEntryText(pos = (100, 33), size = (555, 38), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
-					]),
-				"category": (105,[
-						MultiContentEntryText(pos = (15, 5), size = (565, 36), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-						MultiContentEntryText(pos = (15, 33), size = (565, 30), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the description
-					])
-				},
-				"fonts": [gFont("RegularLight", 26),gFont("Regular", 18)],
-				"itemHeight": 105
-			}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <widget font="RegularLight; 38" halign="center" position="38,921" render="Label" shadowColor="maxBackground" shadowOffset="-3,-3" size="870,68" source="status" transparent="1" foregroundColor="maxGreen1" backgroundColor="black" />
     <!-- /*Buttons-->
@@ -6227,16 +6047,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <!--Uhr */-->
     <eLabel backgroundColor="black" font="Regular; 53" position="38,15" size="810,75" text="Plugin manager activity information" transparent="1" foregroundColor="maxBlueMax" halign="center" />
     <widget position="38,128" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="810,765" source="list" transparent="1" selectionPixmap="maxHD/sel/bar1280x110.png">
-      <convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryPixmapAlphaTest(pos = (18, 14), size = (48, 48), png = 2), # index 2 is the status pixmap
-						MultiContentEntryText(pos = (90, 5), size = (565, 26), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-						MultiContentEntryText(pos = (90, 33), size = (565, 38), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the state
-					],
-				"fonts": [gFont("RegularLight", 26),gFont("Regular", 18)],
-				"itemHeight": 75
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <widget backgroundColor="black" font="RegularLight; 38" halign="center" position="38,923" render="Label" size="810,68" source="status" transparent="1" foregroundColor="maxGreen1" />
     <!-- /*Buttons-->
@@ -6282,16 +6093,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <!--Uhr */-->
     <eLabel backgroundColor="maxBackground" font="Regular; 68" position="38,15" size="810,75" text="Plugin manager help" transparent="1" foregroundColor="maxBlueMax" halign="center" />
     <widget position="38,120" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="810,765" source="list" transparent="1" selectionPixmap="maxHD/sel/bar1280x110.png">
-      <convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(pos = (90, 5), size = (565, 26), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-						MultiContentEntryText(pos = (90, 33), size = (565, 38), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the state
-						MultiContentEntryPixmapAlphaTest(pos = (15, 5), size = (48, 48), png = 2), # index 2 is the status pixmap
-					],
-				"fonts": [gFont("RegularLight", 26),gFont("Regular", 18)],
-				"itemHeight": 75
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <widget backgroundColor="black" font="RegularLight; 38" halign="center" position="38,923" render="Label" size="810,68" source="status" transparent="1" foregroundColor="maxGreen1" />
     <!-- /*Buttons-->
@@ -6418,26 +6220,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <!--Uhr */-->
     <eLabel backgroundColor="maxBackground" font="Regular; 68" position="38,15" size="810,75" text="Softwaremanager" transparent="1" foregroundColor="maxBlueMax" halign="center" />
     <widget source="menu" render="Listbox" position="38,128" size="810,533" scrollbarMode="showNever" enableWrapAround="1" transparent="1" selectionPixmap="maxHD/sel/bar1280.png">
-      <convert type="TemplatedMultiContent">
-				{"template":
-					[
-						MultiContentEntryText(pos = (15, 5), size = (383, 30), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
-					],
-					"fonts": [gFont("Regular", 22)],
-					"itemHeight": 40
-				}
-	</convert>
+      <convert type="StringList" />
     </widget>
     <widget source="menu" render="Listbox" position="38,660" size="810,330" zPosition="3" scrollbarMode="showNever" selectionDisabled="1" foregroundColor="maxForeground" backgroundColor="maxBackground" transparent="1" selectionPixmap="maxHD/sel/bar1280x170.png">
-      <convert type="TemplatedMultiContent">
-				{"template":
-					[
-						MultiContentEntryText(pos = (0, 0), size = (390, 150), flags = RT_HALIGN_CENTER|RT_VALIGN_TOP|RT_WRAP, text = 2), # index 2 is the Description,
-					],
-					"fonts": [gFont("Regular", 20)],
-					"itemHeight": 170
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <!-- /*Buttons-->
     <ePixmap alphatest="blend" pixmap="maxHD/buttons/red1.png" position="38,1058" size="300,3" />
@@ -6523,12 +6309,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget backgroundColor="black" font="RegularLight; 38" name="languagetext" position="38,1020" size="300,38" transparent="1" halign="center" />
     <widget backgroundColor="maxBackground" font="RegularLight;40" name="text" position="38,120" size="870,420" transparent="1" />
     <widget position="38,585" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="870,405" source="list" transparent="1" zPosition="13">
-      <convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (20, 2), size = (760, 29), flags = RT_HALIGN_LEFT, text = 0) ],
-				"fonts": [gFont("RegularLight", 25)],
-				"itemHeight": 32
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <widget itemHeight="58" name="config" position="38,585" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="870,405" transparent="1" zPosition="14" selectionPixmap="maxHD/sel/bar1280.png" />
   </screen>
@@ -6571,12 +6352,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget backgroundColor="black" font="RegularLight; 38" name="languagetext" position="38,1020" size="300,38" transparent="1" halign="center" />
     <widget backgroundColor="maxBackground" font="RegularLight;40" name="text" position="38,120" size="870,420" transparent="1" />
     <widget position="38,585" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="870,405" source="list" transparent="1" zPosition="13">
-      <convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (20, 2), size = (760, 29), flags = RT_HALIGN_LEFT, text = 0) ],
-				"fonts": [gFont("RegularLight", 25)],
-				"itemHeight": 32
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <widget itemHeight="58" name="config" position="38,585" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="870,405" transparent="1" zPosition="14" selectionPixmap="maxHD/sel/bar1280.png" />
   </screen>
@@ -6619,12 +6395,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget backgroundColor="black" font="RegularLight; 38" name="languagetext" position="38,1020" size="300,38" transparent="1" halign="center" />
     <widget backgroundColor="maxBackground" font="RegularLight;40" name="text" position="38,120" size="870,420" transparent="1" />
     <widget position="38,585" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="870,405" source="list" transparent="1" zPosition="13">
-      <convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (20, 2), size = (760, 29), flags = RT_HALIGN_LEFT, text = 0) ],
-				"fonts": [gFont("RegularLight", 25)],
-				"itemHeight": 32
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <widget itemHeight="58" name="config" position="38,585" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="870,405" transparent="1" zPosition="14" selectionPixmap="maxHD/sel/bar1280.png" />
   </screen>
@@ -6678,12 +6449,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget backgroundColor="black" font="RegularLight; 38" name="languagetext" position="38,1020" size="300,38" transparent="1" halign="center" />
     <widget backgroundColor="maxBackground" font="RegularLight;40" name="text" position="285,120" size="638,495" transparent="1" />
     <widget position="285,645" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="638,338" source="list" transparent="1" zPosition="13">
-      <convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (20, 2), size = (760, 29), flags = RT_HALIGN_LEFT, text = 0) ],
-				"fonts": [gFont("RegularLight", 25)],
-				"itemHeight": 32
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <widget itemHeight="58" name="config" position="285,645" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="638,338" transparent="1" zPosition="14" selectionPixmap="maxHD/sel/bar1280.png" />
   </screen>
@@ -6735,15 +6501,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget alphatest="blend" name="wizard" pixmap="skin_default/wizard.png" position="54,803" size="165,261" transparent="1" zPosition="12" />
     <widget backgroundColor="maxBackground" font="RegularLight;40" name="text" position="285,120" size="638,495" transparent="1" />
     <widget position="285,645" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="638,338" source="languages" transparent="1" zPosition="13" selectionPixmap="maxHD/sel/bar1280.png">
-      <convert type="TemplatedMultiContent">
-				{"template": [
-				MultiContentEntryText(pos = (130, 17), size = (530, 60), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
-				MultiContentEntryPixmap(pos = (20, 10), size = (60, 40), png = 2), # index 2 is the pixmap
-				],
-				"fonts": [gFont("RegularLight", 25)],
-				"itemHeight": 60
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="NetworkWizard" position="0,0" size="1920,1080" title="Welcome...">
@@ -6796,12 +6554,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget backgroundColor="black" font="RegularLight; 38" name="languagetext" position="38,1020" size="300,38" transparent="1" halign="center" />
     <widget backgroundColor="maxBackground" font="RegularLight;40" name="text" position="285,120" size="638,495" transparent="1" />
     <widget position="285,645" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="638,338" source="list" transparent="1" zPosition="13">
-      <convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (20, 2), size = (760, 29), flags = RT_HALIGN_LEFT, text = 0) ],
-				"fonts": [gFont("RegularLight", 25)],
-				"itemHeight": 32
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <widget itemHeight="58" name="config" position="285,645" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="638,338" transparent="1" zPosition="14" selectionPixmap="maxHD/sel/bar1280.png" />
   </screen>
@@ -6855,12 +6608,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget backgroundColor="black" font="RegularLight; 38" name="languagetext" position="38,1020" size="300,38" transparent="1" halign="center" />
     <widget backgroundColor="maxBackground" font="RegularLight;40" name="text" position="285,120" size="638,495" transparent="1" />
     <widget position="285,645" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="638,338" source="list" transparent="1" zPosition="13">
-      <convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (20, 2), size = (760, 29), flags = RT_HALIGN_LEFT, text = 0) ],
-				"fonts": [gFont("RegularLight", 25)],
-				"itemHeight": 32
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <widget itemHeight="58" name="config" position="285,645" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="638,338" transparent="1" zPosition="14" selectionPixmap="maxHD/sel/bar1280.png" />
   </screen>
@@ -6914,12 +6662,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget backgroundColor="maxBackground" font="RegularLight;40" name="text" position="285,120" size="638,495" transparent="1" />
     <widget alphatest="blend" name="portpic" position="45,791" size="192,192" transparent="1" zPosition="11" />
     <widget position="285,645" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="638,338" source="list" transparent="1" zPosition="13">
-      <convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (20, 2), size = (760, 29), flags = RT_HALIGN_LEFT, text = 0) ],
-				"fonts": [gFont("RegularLight", 25)],
-				"itemHeight": 32
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <widget itemHeight="58" name="config" position="285,645" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="638,338" transparent="1" zPosition="14" selectionPixmap="maxHD/sel/bar1280.png" />
   </screen>
@@ -6955,17 +6698,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <!--Uhr */-->
     <widget backgroundColor="black" font="Regular; 68" position="38,15" render="Label" size="870,75" source="title" transparent="1" valign="center" zPosition="10" halign="center" foregroundColor="maxBlueMax" />
     <widget source="list" render="Listbox" position="38,128" size="870,855" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="1" selectionPixmap="maxHD/sel/bar1280.png">
-      <convert type="TemplatedMultiContent">
-				{"template":
-					[
-						MultiContentEntryText(pos = (135, 2), size = (550, 33), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0), # index 2 is the description
-						MultiContentEntryText(pos = (135, 28), size = (550, 26), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # index 2 is the description
-						MultiContentEntryPixmapAlphaTest(pos = (20, 5), size = (100, 50), png = 3), # index 4 is the status pixmap
-					],
-					"fonts": [gFont("RegularLight", 26),gFont("Regular", 18)],
-					"itemHeight": 60
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <!-- /*Buttons-->
     <ePixmap alphatest="blend" pixmap="maxHD/buttons/red1.png" position="23,1058" size="300,3" />
@@ -7009,16 +6742,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <!--Uhr */-->
     <widget backgroundColor="maxBackground" font="Regular; 45" position="38,15" render="Label" size="870,75" source="title" transparent="1" valign="center" zPosition="1" halign="center" foregroundColor="maxBlueMax" />
     <widget source="list" render="Listbox" position="38,128" size="870,855" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="1" selectionPixmap="maxHD/sel/bar1280.png">
-      <convert type="TemplatedMultiContent">
-				{"template":
-					[
-						MultiContentEntryText(pos = (35, 5), size = (879, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
-						MultiContentEntryPixmapAlphaTest(pos = (5, 5), size = (36, 36), png = 3) # index 4 is the status pixmap
-					],
-					"fonts": [gFont("Regular", 25),gFont("Regular", 17)],
-					"itemHeight": 40
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <!-- /*Buttons-->
     <ePixmap alphatest="blend" pixmap="maxHD/buttons/red1.png" position="23,1058" size="300,3" />
@@ -7122,15 +6846,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <!--Uhr */-->
     <widget backgroundColor="maxBackground" font="Regular; 53" position="38,15" render="Label" size="870,75" source="title" transparent="1" valign="center" zPosition="1" halign="center" foregroundColor="maxBlueMax" />
     <widget enableWrapAround="1" position="38,125" render="Listbox" scrollbarMode="showNever" size="870,240" source="list" transparent="1" selectionPixmap="maxHD/sel/bar1280.png">
-      <convert type="TemplatedMultiContent">
-				{"template": [
-								MultiContentEntryText(pos = (55, 7), size = (500, 35), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
-								MultiContentEntryPixmapAlphaTest(pos = (25, 15), size = (24, 24), png = 2) # index 4 is the status pixmap
-					],
-				"fonts": [gFont("RegularLight", 26),gFont("Regular", 18)],
-				"itemHeight": 55
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <!-- /*Buttons-->
     <ePixmap alphatest="blend" pixmap="maxHD/buttons/red1.png" position="23,1065" size="300,3" />
@@ -7222,17 +6938,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <!--Uhr */-->
     <widget backgroundColor="black" font="Regular; 53" position="38,15" render="Label" size="810,68" source="title" transparent="1" valign="center" zPosition="10" halign="center" foregroundColor="maxBlueMax" />
     <widget enableWrapAround="1" position="38,128" render="Listbox" size="810,810" source="list" transparent="1" selectionPixmap="maxHD/sel/bar1280.png" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1">
-      <convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryPixmapAlphaTest(pos = (25, 5), size = (48, 48), png = 4), # index 4 is the status pixmap
-						MultiContentEntryText(pos = (100, 5), size = (590, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # index 0 is the name
-						MultiContentEntryText(pos = (110, 35), size = (590, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0), # index 2 is the description
-						MultiContentEntryPixmapAlphaTest(pos = (5, 58), size = (0, 0), png = 5), # index 4 is the div pixmap
-					],
-				"fonts": [gFont("RegularLight", 26),gFont("Regular", 18)],
-				"itemHeight": 60
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <!-- /*Buttons-->
     <ePixmap alphatest="blend" pixmap="maxHD/buttons/red1.png" position="38,1058" size="300,3" />
@@ -7272,16 +6978,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <!--Uhr */-->
     <widget backgroundColor="black" font="Regular; 41" position="38,15" render="Label" size="810,68" source="title" transparent="1" valign="center" zPosition="10" halign="center" foregroundColor="maxBlueMax" />
     <widget enableWrapAround="1" position="38,120" render="Listbox" scrollbarMode="showNever" size="810,864" source="list" transparent="1" selectionPixmap="maxHD/sel/bar1280.png">
-      <convert type="TemplatedMultiContent">
-				{"template": [
-							MultiContentEntryPixmapAlphaTest(pos = (20, 2), size = (44, 44), png = 3), # index 4 is the status pixmap
-							MultiContentEntryText(pos = (72, 2), size = (460, 24), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 0 is the MenuText,
-							MultiContentEntryText(pos = (72, 26), size = (460, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # index 0 is the MenuText,
-					],
-				"fonts": [gFont("RegularLight", 26),gFont("Regular", 18)],
-				"itemHeight": 48
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <!-- /*Buttons-->
     <ePixmap alphatest="blend" pixmap="maxHD/buttons/red1.png" position="38,1058" size="300,3" />
@@ -7325,16 +7022,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget source="title" render="Label" position="38,15" size="870,75" font="Regular; 68" foregroundColor="maxBlueMax" backgroundColor="maxBackground" transparent="1" halign="center" />
     <widget name="header" position="38,119" size="870,90" font="Regular; 45" halign="center" foregroundColor="maxGreen1" backgroundColor="black" transparent="1" />
     <widget source="menu" render="Listbox" position="38,255" size="870,720" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="1" selectionPixmap="maxHD/sel/bar1280.png">
-      <convert type="TemplatedMultiContent">
-				{"template":
-					[
-						MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (48, 48), png = 2), # index 4 is the status pixmap
-						MultiContentEntryText(pos = (52, 2), size = (600, 44), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 0 is the MenuText,
-					],
-					"fonts": [gFont("Regular", 24)],
-					"itemHeight": 48
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <!-- /*Buttons-->
     <ePixmap alphatest="blend" pixmap="maxHD/buttons/red1.png" position="23,1058" size="300,3" />
@@ -7561,16 +7249,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <!--Uhr */-->
     <widget backgroundColor="maxBackground" font="Regular; 68" position="38,15" render="Label" size="810,75" source="title" transparent="1" foregroundColor="maxBlueMax" halign="center" />
     <widget position="38,120" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="810,855" source="menu" transparent="1" selectionPixmap="maxHD/sel/bar1280.png">
-      <convert type="TemplatedMultiContent">
-				{"template": [
-							MultiContentEntryPixmapAlphaTest(pos = (2, 2), size = (44, 44), png = 3), # index 4 is the status pixmap
-							MultiContentEntryText(pos = (52, 2), size = (600, 24), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 0 is the MenuText,
-							MultiContentEntryText(pos = (52, 26), size = (600, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # index 0 is the MenuText,
-					],
-				"fonts": [gFont("RegularLight", 26),gFont("Regular", 18)],
-				"itemHeight": 48
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <!-- /*Buttons-->
     <ePixmap alphatest="blend" pixmap="maxHD/buttons/red1.png" position="23,1058" size="270,3" />
@@ -7658,16 +7337,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget backgroundColor="maxBackground" font="Regular; 68" position="38,15" render="Label" size="810,75" source="title" transparent="1" foregroundColor="maxBlueMax" halign="center" />
     <widget backgroundColor="maxBackground" font="RegularLight; 38" name="status" position="38,122" size="810,53" transparent="1" foregroundColor="maxGreen1" />
     <widget position="38,218" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="810,765" source="menu" transparent="1" selectionPixmap="maxHD/sel/bar1280.png">
-      <convert type="TemplatedMultiContent">
-				{"template": [
-							MultiContentEntryPixmapAlphaTest(pos = (2, 2), size = (44, 44), png = 3), # index 4 is the status pixmap
-							MultiContentEntryText(pos = (52, 2), size = (600, 24), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 0 is the MenuText,
-							MultiContentEntryText(pos = (52, 26), size = (600, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # index 0 is the MenuText,
-					],
-				"fonts": [gFont("RegularLight", 26),gFont("Regular", 18)],
-				"itemHeight": 48
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <!-- /*Buttons-->
     <ePixmap alphatest="blend" pixmap="maxHD/buttons/red1.png" position="38,1058" size="300,3" />
@@ -7707,16 +7377,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <!--Uhr */-->
     <widget backgroundColor="maxBackground" font="Regular; 68" position="38,15" render="Label" size="810,75" source="title" transparent="1" foregroundColor="maxBlueMax" halign="center" />
     <widget position="38,128" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="810,855" source="downloadmenu" transparent="1" selectionPixmap="maxHD/sel/bar1280.png">
-      <convert type="TemplatedMultiContent">
-				{"template": [
-							MultiContentEntryPixmapAlphaTest(pos = (2, 2), size = (44, 44), png = 3), # index 4 is the status pixmap
-							MultiContentEntryText(pos = (52, 2), size = (600, 24), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 0 is the MenuText,
-							MultiContentEntryText(pos = (52, 26), size = (600, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # index 0 is the MenuText,
-					],
-				"fonts": [gFont("RegularLight", 26),gFont("Regular", 18)],
-				"itemHeight": 48
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <ePixmap alphatest="blend" pixmap="maxHD/buttons/red1.png" position="38,1058" size="300,3" />
     <ePixmap alphatest="blend" pixmap="maxHD/buttons/green1.png" position="548,1058" size="300,3" />
@@ -7796,18 +7457,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <!--Uhr */-->
     <widget backgroundColor="black" font="Regular; 41" position="38,15" render="Label" size="810,75" source="title" transparent="1" valign="center" zPosition="10" halign="center" foregroundColor="maxBlueMax" />
     <widget backgroundColor="maxBackground" enableWrapAround="1" position="38,128" render="Listbox" size="810,852" source="list" transparent="1" selectionPixmap="maxHD/sel/bar1280x110.png" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1">
-      <convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(pos = (75, 7), size = (600, 24), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0), # index 2 is the description
-						MultiContentEntryText(pos = (75, 33), size = (600, 16), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # index 0 is the name
-						MultiContentEntryText(pos = (75, 49), size = (600, 16), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 2 is the description
-						MultiContentEntryPixmapAlphaTest(pos = (25, 9), size = (48, 48), png = 4), # index 4 is the status pixmap
-						MultiContentEntryPixmapAlphaTest(pos = (75, 66), size = (652, 0), png = 5), # index 4 is the div pixmap
-					],
-				"fonts": [gFont("RegularLight", 26),gFont("RegularLight", 18)],
-				"itemHeight": 70
-				}
-      </convert>
+      <convert type="StringList" />
     </widget>
     <!-- /*Buttons-->
     <ePixmap alphatest="blend" pixmap="maxHD/buttons/red1.png" position="23,1058" size="270,3" />
@@ -8108,16 +7758,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget backgroundColor="black" font="RegularLight; 38" halign="center" position="308,1020" render="Label" size="270,38" source="key_green" transparent="1" zPosition="1" />
     <widget backgroundColor="black" font="RegularLight; 38" halign="center" position="585,1020" render="Label" size="270,38" source="key_yellow" transparent="1" zPosition="1" />
     <widget position="38,120" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="810,864" source="menu" selectionPixmap="maxHD/sel/bar1280.png" transparent="1">
-      <convert transparent="0" type="TemplatedMultiContent">
-				{"template":
-					[ 
-						MultiContentEntryPixmapAlphaTest(pos = (4, 2), size = (48, 48), png = 2), 
-						MultiContentEntryText(pos = (60, 12), size = (500, 24), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0), 
-					], 
-					"fonts": [gFont("RegularLight", 26),gFont("Regular", 18)],
-					"itemHeight": 52 
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="PanelPassword" position="0,0" size="1920,1080" title="Change password for VTI Panel">
@@ -8274,18 +7915,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <!--Uhr */-->
     <widget backgroundColor="maxBackground" font="Regular; 68" position="38,15" render="Label" size="870,75" source="title" transparent="1" foregroundColor="maxBlueMax" halign="center" />
     <widget position="36,128" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="870,855" source="menu" transparent="1" selectionPixmap="maxHD/sel/bar1280x110.png">
-      <convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryPixmapAlphaTest(pos = (5, 2), size = (48, 48), png = 1),
-						MultiContentEntryText(pos = (55, 2), size = (600, 24), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2),
-						MultiContentEntryText(pos = (55, 26), size = (600, 16), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3),
-						MultiContentEntryText(pos = (55, 42), size = (600, 16), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 4),
-						MultiContentEntryText(pos = (55, 58), size = (600, 16), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 5),
-					],
-				"fonts": [gFont("RegularLight", 26),gFont("RegularLight", 18)],
-				"itemHeight": 77
-				}
-	</convert>
+      <convert type="StringList" />
     </widget>
     <!-- /*Buttons-->
     <ePixmap alphatest="blend" pixmap="maxHD/buttons/red1.png" position="23,1058" size="300,3" />
@@ -8714,17 +8344,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <ePixmap alphatest="blend" pixmap="maxHD/line/line45.png" position="14,1008" size="2,68" zPosition="2" />
     <ePixmap alphatest="blend" pixmap="maxHD/line/line590.png" position="14,110" size="2,882" zPosition="2" />
     <widget position="36,128" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="810,855" source="tasklist" transparent="1" selectionPixmap="maxHD/sel/bar1280x110.png">
-      <convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(pos = (5, 1), size = (675, 24), font=1, flags = RT_HALIGN_LEFT, text = 1), # name
-						MultiContentEntryText(pos = (5, 25), size = (150, 24), font=1, flags = RT_HALIGN_LEFT, text = 2), # state
-						MultiContentEntryProgress(pos = (160, 25), size = (390, 20), percent = -3), # progress
-						MultiContentEntryText(pos = (560, 25), size = (100, 24), font=1, flags = RT_HALIGN_RIGHT, text = 4), # percentage
-					],
-				"fonts": [gFont("Regular", 24),gFont("Regular", 18)],
-				"itemHeight": 50
-				}
-	</convert>
+      <convert type="StringList" />
     </widget>
     <!-- /*Uhr-->
     <widget source="global.CurrentTime" render="Label" position="1479,920" size="420,105" font="Regular; 120" halign="center" backgroundColor="black" transparent="1" foregroundColor="maxAccent1" valign="center">
@@ -9404,14 +9024,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <!--Uhr */-->
     <widget source="Title" render="Label" position="38,15" size="870,75" font="Regular; 45" foregroundColor="maxBlueMax" backgroundColor="maxBackground" transparent="1" halign="center" />
     <widget source="menu" render="Listbox" position="38,128" size="870,855" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="1" enableWrapAround="1" selectionPixmap="maxHD/sel/bar1280.png">
-      <convert type="TemplatedMultiContent" transparent="0">
-				{"template": [
-						MultiContentEntryText(pos = (5, 2), size = (600, 20), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
-					],
-				"fonts": [gFont("Regular", 22)],
-				"itemHeight": 26
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <!-- /*Buttons-->
     <ePixmap alphatest="blend" pixmap="maxHD/buttons/red1.png" position="23,1058" size="218,3" />
@@ -9724,61 +9337,18 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget name="uptime" position="38,218" size="555,33" font="Regular;32" halign="left" valign="center" transparent="1" foregroundColor="maxGreen1" backgroundColor="black" />
     <widget name="load" position="38,263" size="555,33" font="Regular;32" halign="left" valign="center" transparent="1" foregroundColor="maxGreen1" backgroundColor="black" />
     <widget source="netdev" render="Listbox" position="630,128" size="503,173" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="1">
-      <convert type="TemplatedMultiContent" transparent="0">
-			{"template": [
-					MultiContentEntryText(pos = (5, 2), size = (80, 20), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
-					MultiContentEntryText(pos = (100, 2), size = (110, 20), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 1),
-					MultiContentEntryText(pos = (225, 2), size = (110, 20), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 2),
-				],
-			"fonts": [gFont("Regular", 18),gFont("Regular", 16)],
-			"itemHeight": 24,
-			"selectionEnabled": False
-			}
-		</convert>
+      <convert type="StringList" />
     </widget>
     <widget source="proclist" render="Listbox" position="38,351" size="555,270" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="1">
-      <convert type="TemplatedMultiContent" transparent="0">
-			{"template": [
-					MultiContentEntryText(pos = (5, 2), size = (100, 20), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
-					MultiContentEntryText(pos = (110, 2), size = (100, 20), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 1),
-					MultiContentEntryText(pos = (205, 2), size = (80, 20), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 2),
-					MultiContentEntryText(pos = (320, 2), size = (60, 20), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 3),
-				],
-			"fonts": [gFont("Regular", 18),gFont("Regular", 16)],
-			"itemHeight": 24,
-			"selectionEnabled": False
-			}
-		</convert>
+      <convert type="StringList" />
     </widget>
     <widget source="memory" render="Listbox" position="630,351" size="503,165" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="1">
-      <convert type="TemplatedMultiContent" transparent="0">
-			{"template": [
-					MultiContentEntryText(pos = (5, 2), size = (85, 20), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
-					MultiContentEntryText(pos = (90, 2), size = (95, 20), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 1),
-					MultiContentEntryText(pos = (205, 2), size = (95, 20), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 2),
-				],
-			"fonts": [gFont("Regular", 18),gFont("Regular", 16)],
-			"itemHeight": 24,
-			"selectionEnabled": False
-			}
-		</convert>
+      <convert type="StringList" />
     </widget>
     <widget name="temp" position="630,552" size="503,33" font="Regular;32" halign="left" valign="center" transparent="1" foregroundColor="maxGreen1" backgroundColor="black" />
     <widget name="fan" position="630,593" size="503,33" font="Regular;32" halign="left" valign="center" transparent="1" foregroundColor="maxGreen1" backgroundColor="black" />
     <widget source="storagelist" render="Listbox" position="38,662" size="1095,330" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="1">
-      <convert type="TemplatedMultiContent" transparent="0">
-			{"template": [
-					MultiContentEntryText(pos = (5, 2), size = (225, 20), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
-					MultiContentEntryText(pos = (235, 2), size = (200, 20), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
-					MultiContentEntryText(pos = (440, 2), size = (50, 20), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2),
-					MultiContentEntryText(pos = (500, 2), size = (95, 20), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 3),
-					MultiContentEntryText(pos = (605, 2), size = (95, 20), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 4),
-				],
-			"fonts": [gFont("Regular", 18),gFont("Regular", 16)],
-			"itemHeight": 24,
-			"selectionEnabled": False
-			}
-		</convert>
+      <convert type="StringList" />
     </widget>
   </screen>
   <!-- AutoShutdown -->
