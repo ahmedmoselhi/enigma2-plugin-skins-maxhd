@@ -14,6 +14,18 @@ class PiconUni(Renderer):
 
 	GUI_WIDGET = ePixmap
 
+	def applySkin(self, desktop, parent):
+		attribs = []
+		for (attrib, value) in self.skinAttributes:
+			if attrib == 'path':
+				self.path = value
+			elif attrib == 'scale':
+				self.scale = value
+			else:
+				attribs.append((attrib, value))
+		self.skinAttributes = attribs
+		return Renderer.applySkin(self, desktop, parent)
+
 	def changed(self, what):
 		if not self.instance: return
 		pngname = ''
