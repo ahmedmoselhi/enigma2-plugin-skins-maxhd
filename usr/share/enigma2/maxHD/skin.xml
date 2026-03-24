@@ -248,7 +248,7 @@
     <widget source="session.CurrentService" render="Label" position="26,749" size="384,39" zPosition="1" font="Regular; 33" halign="left" valign="center" transparent="1" noWrap="0" backgroundColor="background" foregroundColor="red">
       <convert type="pliLayoutInfo">MemTotal,Short</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="392,747" zPosition="2" size="437,39" ffont="Regular; 32" halign="center" valign="center" transparent="1" noWrap="0" foregroundColor="cyan1" backgroundColor="background" font="Regular; 33">
+    <widget source="session.CurrentService" render="Label" position="392,747" zPosition="2" size="437,39" halign="center" valign="center" transparent="1" noWrap="0" foregroundColor="cyan1" backgroundColor="background" font="Regular; 33">
       <convert type="Bitrate2">V:%V Kbps A:%A Kbps</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="1197,749" size="524,39" backgroundColor="background" transparent="1" zPosition="3" foregroundColor="green_light" font="Regular; 33" valign="center" halign="center">
@@ -274,7 +274,7 @@
       <convert type="ClockToText">Default</convert>
     </widget>
     <widget backgroundColor="maxBackground" foregroundColor="white" font="Regular;64" halign="left" noWrap="1" position="509,908" render="Label" size="1050,53" source="session.Event_Now" transparent="1">
-      <convert type="EventName">Name</convert>
+      <convert type="EventName2">Name</convert>
     </widget>
     <eLabel backgroundColor="maxBackground" font="Regular; 35" foregroundColor="maxBlue2" halign="right" position="1721,473" size="98,42" transparent="1" valign="center" zPosition="2" text="SNR:" />
     <widget backgroundColor="maxBackground" font="Regular; 35" foregroundColor="yellow1" position="1826,473" render="Label" size="107,42" source="session.FrontendStatus" transparent="1" valign="center" zPosition="2">
@@ -294,7 +294,7 @@
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
     <widget source="session.Event_Next" render="Label" position="506,987" size="1080,38" font="Regular; 38" halign="left" backgroundColor="black" foregroundColor="maxAccent2" transparent="1">
-      <convert type="EventName">Name</convert>
+      <convert type="EventName2">Name</convert>
     </widget>
     <!-- CHANNELNR/NAME */-->
     <widget source="session.CurrentService" render="Label" position="651,1035" size="1065,30" zPosition="4" font="Regular; 30" halign="left" noWrap="1" backgroundColor="background" transparent="1" foregroundColor="maxDeepYellow2">
@@ -449,6 +449,10 @@
       <convert type="ConfigEntryTest">config.usage.update_available,True,CheckSourceBoolean</convert>
       <convert type="ConditionalShowHide" />
     </widget>
+    <widget name="key_red" position="0,0" size="1,1" font="Regular; 1" transparent="1" />
+    <widget name="key_green" position="0,0" size="1,1" font="Regular; 1" transparent="1" />
+    <widget name="key_yellow" position="0,0" size="1,1" font="Regular; 1" transparent="1" />
+    <widget name="key_blue" position="0,0" size="1,1" font="Regular; 1" transparent="1" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="SecondInfoBar" position="center,center" size="1920,1080" title="InfoBar">
   <widget alphatest="on" position="1748,360" size="150,90" render="PicCript" path="cript" source="session.CurrentService" transparent="1" zPosition="4" />
@@ -567,7 +571,7 @@
     <convert type="ClockToText">Default</convert>
   </widget>
   <widget backgroundColor="maxBackground" foregroundColor="white" font="Regular;64" halign="left" noWrap="1" position="509,908" render="Label" size="1050,53" source="session.Event_Now" transparent="1">
-    <convert type="EventName">Name</convert>
+    <convert type="EventName2">Name</convert>
   </widget>
   <eLabel backgroundColor="maxBackground" font="Regular; 35" foregroundColor="maxBlue2" halign="right" position="1721,473" size="98,42" transparent="1" valign="center" zPosition="2" text="SNR:" />
   <widget backgroundColor="maxBackground" font="Regular; 35" foregroundColor="yellow1" position="1826,473" render="Label" size="107,42" source="session.FrontendStatus" transparent="1" valign="center" zPosition="2">
@@ -587,7 +591,7 @@
     <convert type="ClockToText">Format:%H:%M</convert>
   </widget>
   <widget source="session.Event_Next" render="Label" position="506,987" size="1080,38" font="Regular; 38" halign="left" backgroundColor="black" foregroundColor="maxAccent2" transparent="1">
-    <convert type="EventName">Name</convert>
+    <convert type="EventName2">Name</convert>
   </widget>
   <!-- CHANNELNR/NAME */-->
   <widget source="session.CurrentService" render="Label" position="651,1035" size="1065,30" zPosition="4" font="Regular; 30" halign="left" noWrap="1" backgroundColor="background" transparent="1" foregroundColor="maxDeepYellow2">
