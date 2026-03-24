@@ -18,7 +18,7 @@ from pathlib import Path
 from typing import Iterable, List, Sequence, Tuple
 
 PNG_SIGNATURE = b"\x89PNG\r\n\x1a\n"
-TARGET_SIZE = (189, 123)
+TARGET_SIZE = (150, 90)
 DEFAULT_DIRS = (
     Path("usr/share/enigma2/cript"),
     Path("usr/share/enigma2/piconCrypt"),
