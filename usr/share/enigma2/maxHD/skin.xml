@@ -3725,6 +3725,42 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel backgroundColor="maxBackground" font="Regular; 68" position="38,15" size="810,75" text="Parental control setup" transparent="1" foregroundColor="maxBlueMax" halign="center" />
     <widget backgroundColor="maxBackground" enableWrapAround="1" itemHeight="54" name="config" position="38,128" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="810,930" transparent="1" selectionPixmap="maxHD/sel/bar1280.png" />
   </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="PluginBrowserGrid" position="0,0" size="1920,1080" title="Plugin browser">
+    <eLabel backgroundColor="maxBackground" position="14,5" size="855,95" transparent="0" zPosition="-10" />
+    <eLabel backgroundColor="maxBackground" position="14,110" size="855,888" transparent="0" zPosition="-10" />
+    <eLabel backgroundColor="maxBackground" position="14,1010" size="855,65" transparent="0" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="maxHD/line/line570.png" position="14,5" size="855,2" zPosition="1" />
+    <ePixmap alphatest="blend" pixmap="maxHD/line/line570.png" position="14,98" size="855,2" zPosition="0" />
+    <ePixmap alphatest="blend" pixmap="maxHD/line/line63.png" position="14,5" size="2,95" zPosition="2" />
+    <ePixmap alphatest="blend" pixmap="maxHD/line/line63.png" position="869,5" size="2,95" zPosition="2" />
+    <ePixmap alphatest="blend" pixmap="maxHD/line/line570.png" position="14,110" size="855,2" zPosition="0" />
+    <ePixmap alphatest="blend" pixmap="maxHD/line/line610.png" position="14,1074" size="855,2" zPosition="1" />
+    <ePixmap alphatest="blend" pixmap="maxHD/line/line595.png" position="14,110" size="2,890" zPosition="2" />
+    <ePixmap alphatest="blend" pixmap="maxHD/line/line595.png" position="869,110" size="2,890" zPosition="2" />
+    <ePixmap alphatest="blend" pixmap="maxHD/line/line570.png" position="14,1008" size="855,2" zPosition="1" />
+    <ePixmap alphatest="blend" pixmap="maxHD/line/line45.png" position="869,1008" size="2,68" zPosition="2" />
+    <ePixmap alphatest="blend" pixmap="maxHD/line/line45.png" position="14,1008" size="2,68" zPosition="2" />
+    <ePixmap alphatest="blend" pixmap="maxHD/line/line570.png" position="14,998" size="855,2" zPosition="1" />
+    <widget source="global.CurrentTime" render="Label" position="1479,920" size="420,105" font="Regular; 120" halign="center" backgroundColor="black" transparent="1" foregroundColor="maxAccent1" valign="center">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="1479,1025" size="420,45" font="Regular; 35" halign="center" backgroundColor="black" transparent="1" foregroundColor="maxAccent2">
+      <convert type="ClockToText">Format:%A, %d %B</convert>
+    </widget>
+    <eLabel backgroundColor="maxBackground" position="1472,918" size="435,156" transparent="0" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="maxHD/line/line290.png" position="1472,918" size="435,2" zPosition="1" />
+    <ePixmap alphatest="blend" pixmap="maxHD/line/line290.png" position="1472,1074" size="435,2" zPosition="1" />
+    <ePixmap alphatest="blend" pixmap="maxHD/line/line105.png" position="1470,918" size="2,158" zPosition="2" />
+    <ePixmap alphatest="blend" pixmap="maxHD/line/line105.png" position="1907,918" size="2,158" zPosition="2" />
+    <eLabel backgroundColor="black" font="Regular; 68" position="38,15" size="810,75" text="Plugin browser" transparent="1" valign="center" zPosition="10" halign="center" foregroundColor="maxBlueMax" />
+    <widget backgroundColor="maxBackground" enableWrapAround="1" name="pluginGrid" position="38,135" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="810,825" transparent="1" selectionPixmap="maxHD/sel/bar1280.png" />
+    <widget backgroundColor="black" font="RegularLight; 32" halign="left" name="quickselect" position="38,970" size="810,38" transparent="1" />
+    <widget backgroundColor="black" font="RegularLight; 32" halign="center" name="description" position="38,1018" size="810,38" transparent="1" />
+    <ePixmap alphatest="blend" pixmap="maxHD/buttons/red1.png" position="38,1058" size="375,3" />
+    <ePixmap alphatest="blend" pixmap="maxHD/buttons/green1.png" position="473,1058" size="375,3" />
+    <widget backgroundColor="black" font="RegularLight; 38" halign="center" name="red" position="38,1020" size="375,38" transparent="1" zPosition="1" />
+    <widget backgroundColor="black" font="RegularLight; 38" halign="center" name="green" position="473,1020" size="375,38" transparent="1" zPosition="1" />
+  </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="PluginBrowser" position="0,0" size="1920,1080" title="Plugin browser">
     <eLabel backgroundColor="maxBackground" position="14,5" size="855,95" transparent="0" zPosition="-10" />
     <eLabel backgroundColor="maxBackground" position="14,110" size="855,888" transparent="0" zPosition="-10" />
@@ -3756,6 +3792,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <!--Uhr */-->
     <eLabel backgroundColor="black" font="Regular; 68" position="38,15" size="810,75" text="Plugin browser" transparent="1" valign="center" zPosition="10" halign="center" foregroundColor="maxBlueMax" />
     <widget backgroundColor="maxBackground" enableWrapAround="1" name="list" position="38,135" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="810,825" transparent="1" selectionPixmap="maxHD/sel/bar1280.png" />
+    <widget backgroundColor="black" font="RegularLight; 32" halign="left" name="quickselect" position="38,970" size="810,38" transparent="1" />
+    <widget backgroundColor="black" font="RegularLight; 32" halign="center" name="description" position="38,1018" size="810,38" transparent="1" />
     <!-- /*Buttons-->
     <ePixmap alphatest="blend" pixmap="maxHD/buttons/red1.png" position="38,1058" size="375,3" />
     <ePixmap alphatest="blend" pixmap="maxHD/buttons/green1.png" position="473,1058" size="375,3" />
