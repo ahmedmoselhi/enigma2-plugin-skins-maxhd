@@ -1,7 +1,9 @@
+# -*- coding: utf-8 -*-
 from Components.VariableText import VariableText
-from .Renderer import Renderer
+from Components.Renderer.Renderer import Renderer
 
 from enigma import eLabel
+
 
 class Label(VariableText, Renderer):
 	def __init__(self):
@@ -11,12 +13,18 @@ class Label(VariableText, Renderer):
 	GUI_WIDGET = eLabel
 
 	def connect(self, source):
-		Renderer.connect(self, source)
-		self.changed((self.CHANGED_DEFAULT,))
+		if source:
+			Renderer.connect(self, source)
+			self.changed((self.CHANGED_DEFAULT,))
+		else:
+			print("SKINERROR: render label has no source")
 
 	def changed(self, what):
 		if what[0] == self.CHANGED_CLEAR:
 			self.text = ""
+		elif self.source:
+			if hasattr(self.source, "text"):
+				self.text = self.source.text
 		else:
-			self.text = self.source.text
-
+			self.text = "<No Source>"
+			print("SKINERROR: render label has no source")
