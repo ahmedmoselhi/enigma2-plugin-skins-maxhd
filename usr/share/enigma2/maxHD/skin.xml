@@ -445,10 +445,6 @@
     <widget source="session.CurrentService" render="AudioIcon" path="audioicon" position="1748,954" zPosition="3" size="150,35" alphatest="blend">
       <convert type="VAudioInfo">AudioIcon</convert>
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="maxHD/icons/ico_update_info.png" position="396,852" size="36,36" zPosition="5" transparent="1" alphatest="blend">
-      <convert type="ConfigEntryTest">config.usage.update_available,True,CheckSourceBoolean</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
     <widget name="key_red" position="0,0" size="1,1" font="Regular; 1" transparent="1" />
     <widget name="key_green" position="0,0" size="1,1" font="Regular; 1" transparent="1" />
     <widget name="key_yellow" position="0,0" size="1,1" font="Regular; 1" transparent="1" />
@@ -826,10 +822,6 @@
   </widget>
   <widget render="Pixmap" pixmap="maxHD/icons/ico_sub_on.png" position="1748,996" size="150,35" source="session.CurrentService" zPosition="3" alphatest="blend">
     <convert type="ServiceInfo">SubtitlesAvailable</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="maxHD/icons/ico_update_info.png" position="396,852" size="36,36" zPosition="5" transparent="1" alphatest="blend">
-    <convert type="ConfigEntryTest">config.usage.update_available,True,CheckSourceBoolean</convert>
     <convert type="ConditionalShowHide" />
   </widget>
 </screen>
