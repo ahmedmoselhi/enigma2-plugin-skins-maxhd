@@ -946,7 +946,7 @@
     <ePixmap alphatest="blend" pixmap="maxHD/line/line105.png" position="1470,918" size="2,158" zPosition="2" />
     <ePixmap alphatest="blend" pixmap="maxHD/line/line105.png" position="1907,918" size="2,158" zPosition="2" />
     <!--Uhr */-->
-    <widget font="Regular; 68" position="38,15" render="Label" size="615,75" source="title" transparent="1" valign="center" zPosition="10" halign="center" foregroundColor="maxBlueMax" backgroundColor="black" />
+    <widget font="Regular; 68" position="38,15" render="Label" size="615,75" source="Title" transparent="1" valign="center" zPosition="10" halign="center" foregroundColor="maxBlueMax" backgroundColor="black" />
     <widget enableWrapAround="1" position="38,113" render="Listbox" scrollbarMode="showNever" size="615,960" source="menu" transparent="1" zPosition="1" selectionPixmap="maxHD/sel/bar1280.png">
       <convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (10, 5), size = (500, 50), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -955,6 +955,7 @@
 				}
 			</convert>
     </widget>
+    <widget name="menuimage" position="0,0" size="1,1" transparent="1" zPosition="-99" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="Menu" position="0,0" size="1920,1080" title="Main menu">
     <eLabel backgroundColor="maxBackground" position="14,111" size="660,965" transparent="0" zPosition="-10" />
@@ -980,10 +981,11 @@
     <ePixmap alphatest="blend" pixmap="maxHD/line/line105.png" position="1470,918" size="2,158" zPosition="2" />
     <ePixmap alphatest="blend" pixmap="maxHD/line/line105.png" position="1907,918" size="2,158" zPosition="2" />
     <!--Uhr */-->
-    <widget font="Regular; 68" position="38,15" render="Label" size="615,75" source="title" transparent="1" valign="center" zPosition="10" halign="center" foregroundColor="maxBlueMax" backgroundColor="black" />
+    <widget font="Regular; 68" position="38,15" render="Label" size="615,75" source="Title" transparent="1" valign="center" zPosition="10" halign="center" foregroundColor="maxBlueMax" backgroundColor="black" />
     <widget source="menu" render="Listbox" position="38,120" size="615,945" itemHeight="54" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="1" zPosition="1" selectionPixmap="maxHD/sel/bar1280.png">
       <convert type="StringList" />
     </widget>
+    <widget name="menuimage" position="0,0" size="1,1" transparent="1" zPosition="-99" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_harddisk" position="0,0" size="1920,1080" title="Main menu">
     <eLabel backgroundColor="maxBackground" position="14,111" size="660,965" transparent="0" zPosition="-10" />
@@ -1009,7 +1011,7 @@
     <ePixmap alphatest="blend" pixmap="maxHD/line/line105.png" position="1470,918" size="2,158" zPosition="2" />
     <ePixmap alphatest="blend" pixmap="maxHD/line/line105.png" position="1907,918" size="2,158" zPosition="2" />
     <!--Uhr */-->
-    <widget font="Regular; 68" position="38,15" render="Label" size="615,75" source="title" transparent="1" valign="center" zPosition="10" halign="center" foregroundColor="maxBlueMax" backgroundColor="black" />
+    <widget font="Regular; 68" position="38,15" render="Label" size="615,75" source="Title" transparent="1" valign="center" zPosition="10" halign="center" foregroundColor="maxBlueMax" backgroundColor="black" />
     <widget source="menu" render="Listbox" position="38,128" size="615,930" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
       <convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (15, 5), size = (372, 30), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -1018,6 +1020,7 @@
 				}
 			</convert>
     </widget>
+    <widget name="menuimage" position="0,0" size="1,1" transparent="1" zPosition="-99" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_setup" position="0,0" size="1920,1080" title="Main menu" transparent="0">
     <eLabel backgroundColor="maxBackground" position="14,111" size="660,965" transparent="0" zPosition="-10" />
@@ -1043,7 +1046,7 @@
     <ePixmap alphatest="blend" pixmap="maxHD/line/line105.png" position="1470,918" size="2,158" zPosition="2" />
     <ePixmap alphatest="blend" pixmap="maxHD/line/line105.png" position="1907,918" size="2,158" zPosition="2" />
     <!--Uhr */-->
-    <widget font="Regular; 68" position="38,15" render="Label" size="615,75" source="title" transparent="1" valign="center" zPosition="10" halign="center" foregroundColor="maxBlueMax" backgroundColor="black" />
+    <widget font="Regular; 68" position="38,15" render="Label" size="615,75" source="Title" transparent="1" valign="center" zPosition="10" halign="center" foregroundColor="maxBlueMax" backgroundColor="black" />
     <widget enableWrapAround="1" position="38,120" render="Listbox" scrollbarMode="showNever" size="615,945" source="menu" transparent="1" zPosition="1" selectionPixmap="maxHD/sel/bar1280.png">
       <convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (10, 5), size = (500, 50), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -1052,6 +1055,7 @@
 				}
 			</convert>
     </widget>
+    <widget name="menuimage" position="0,0" size="1,1" transparent="1" zPosition="-99" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_information" position="0,0" size="1920,1080" title="Main menu">
     <eLabel backgroundColor="maxBackground" position="14,110" size="855,168" transparent="0" zPosition="-10" />
@@ -1089,7 +1093,7 @@
     <ePixmap alphatest="blend" pixmap="maxHD/line/line105.png" position="1470,918" size="2,158" zPosition="2" />
     <ePixmap alphatest="blend" pixmap="maxHD/line/line105.png" position="1907,918" size="2,158" zPosition="2" />
     <!--Uhr */-->
-    <widget font="Regular; 68" position="38,15" render="Label" size="810,75" source="title" transparent="1" valign="center" zPosition="10" halign="center" foregroundColor="maxBlueMax" backgroundColor="black" />
+    <widget font="Regular; 68" position="38,15" render="Label" size="810,75" source="Title" transparent="1" valign="center" zPosition="10" halign="center" foregroundColor="maxBlueMax" backgroundColor="black" />
     <widget enableWrapAround="1" position="38,120" render="Listbox" scrollbarMode="showNever" size="810,150" source="menu" transparent="1" zPosition="1" selectionPixmap="maxHD/sel/bar1280.png">
       <convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (10, 5), size = (500, 50), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -1152,6 +1156,7 @@
     <widget source="session.CurrentService" render="Label" zPosition="6" position="135,1028" size="713,39" halign="left" valign="center" font="Regular; 30" transparent="1" foregroundColor="yellow1" backgroundColor="black">
       <convert type="ProgressDiskSpaceInfo">UsbInfo,Full</convert>
     </widget>
+    <widget name="menuimage" position="0,0" size="1,1" transparent="1" zPosition="-99" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_scan" position="0,0" size="1920,1080" title="Main menu">
     <eLabel backgroundColor="maxBackground" position="14,111" size="660,965" transparent="0" zPosition="-10" />
@@ -1177,7 +1182,7 @@
     <ePixmap alphatest="blend" pixmap="maxHD/line/line105.png" position="1470,918" size="2,158" zPosition="2" />
     <ePixmap alphatest="blend" pixmap="maxHD/line/line105.png" position="1907,918" size="2,158" zPosition="2" />
     <!--Uhr */-->
-    <widget font="Regular; 68" position="38,15" render="Label" size="615,75" source="title" transparent="1" valign="center" zPosition="10" halign="center" foregroundColor="maxBlueMax" backgroundColor="black" />
+    <widget font="Regular; 68" position="38,15" render="Label" size="615,75" source="Title" transparent="1" valign="center" zPosition="10" halign="center" foregroundColor="maxBlueMax" backgroundColor="black" />
     <widget enableWrapAround="1" position="38,120" render="Listbox" scrollbarMode="showNever" size="615,945" source="menu" transparent="1" selectionPixmap="maxHD/sel/bar1280.png">
       <convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (10, 5), size = (500, 50), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -1186,6 +1191,7 @@
 				}
 			</convert>
     </widget>
+    <widget name="menuimage" position="0,0" size="1,1" transparent="1" zPosition="-99" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_mainmenu" position="0,0" size="1920,1080" title="Main menu" transparent="0">
     <eLabel backgroundColor="maxBackground" position="11,111" size="663,965" transparent="0" zPosition="-10" />
@@ -1198,7 +1204,7 @@
     <ePixmap alphatest="blend" pixmap="maxHD/line/line440_1.png" position="14,1074" size="660,2" zPosition="1" />
     <ePixmap alphatest="blend" pixmap="maxHD/line/line645.png" position="14,110" size="2,966" zPosition="2" />
     <ePixmap alphatest="blend" pixmap="maxHD/line/line645.png" position="674,110" size="2,966" zPosition="2" />
-    <widget font="Regular; 68" position="38,15" render="Label" size="615,75" source="title" transparent="1" valign="center" zPosition="1" halign="center" foregroundColor="maxBlueMax" backgroundColor="black" />
+    <widget font="Regular; 68" position="38,15" render="Label" size="615,75" source="Title" transparent="1" valign="center" zPosition="1" halign="center" foregroundColor="maxBlueMax" backgroundColor="black" />
     <widget source="menu" render="Listbox" position="38,120" size="615,945" scrollbarMode="showNever" enableWrapAround="1" transparent="1" zPosition="1" selectionPixmap="maxHD/sel/bar1280.png">
       <convert type="TemplatedMultiContent">
 				{
@@ -1221,6 +1227,7 @@
     <ePixmap alphatest="blend" pixmap="maxHD/line/line105.png" position="1470,918" size="2,158" zPosition="2" />
     <ePixmap alphatest="blend" pixmap="maxHD/line/line105.png" position="1907,918" size="2,158" zPosition="2" />
     <!--Uhr */-->
+    <widget name="menuimage" position="0,0" size="1,1" transparent="1" zPosition="-99" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_shutdown" position="0,0" size="1920,1080" title="Main menu">
     <eLabel backgroundColor="maxBackground" position="14,111" size="660,965" transparent="0" zPosition="-10" />
@@ -1246,7 +1253,7 @@
     <ePixmap alphatest="blend" pixmap="maxHD/line/line105.png" position="1470,918" size="2,158" zPosition="2" />
     <ePixmap alphatest="blend" pixmap="maxHD/line/line105.png" position="1907,918" size="2,158" zPosition="2" />
     <!--Uhr */-->
-    <widget font="Regular; 60" position="38,15" render="Label" size="615,75" source="title" transparent="1" valign="center" zPosition="10" halign="center" foregroundColor="maxBlueMax" backgroundColor="black" />
+    <widget font="Regular; 60" position="38,15" render="Label" size="615,75" source="Title" transparent="1" valign="center" zPosition="10" halign="center" foregroundColor="maxBlueMax" backgroundColor="black" />
     <widget enableWrapAround="1" position="38,120" render="Listbox" scrollbarMode="showNever" size="615,945" source="menu" transparent="1" zPosition="1" selectionPixmap="maxHD/sel/bar1280.png">
       <convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (10, 5), size = (500, 50), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -1255,6 +1262,7 @@
 				}
 			</convert>
     </widget>
+    <widget name="menuimage" position="0,0" size="1,1" transparent="1" zPosition="-99" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="About" position="0,0" size="1920,1080" title="About">
     <widget source="Title" render="Label" position="38,15" size="810,75" zPosition="1" halign="center" font="Regular; 68" backgroundColor="maxBackground" transparent="1" foregroundColor="maxBlueMax" />
