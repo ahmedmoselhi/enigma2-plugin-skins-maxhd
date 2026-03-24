@@ -959,7 +959,7 @@
 				}
 			</convert>
     </widget>
-    <widget name="menuimage" position="0,0" size="1,1" transparent="1" zPosition="-99" />
+    <widget name="menuimage" pixmap="maxHD/icons/tv.png" position="0,0" size="1,1" transparent="1" zPosition="-99" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="Menu" position="0,0" size="1920,1080" title="Main menu">
     <eLabel backgroundColor="maxBackground" position="14,111" size="660,965" transparent="0" zPosition="-10" />
@@ -989,7 +989,7 @@
     <widget source="menu" render="Listbox" position="38,120" size="615,945" itemHeight="54" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="1" zPosition="1" selectionPixmap="maxHD/sel/bar1280.png">
       <convert type="StringList" />
     </widget>
-    <widget name="menuimage" position="0,0" size="1,1" transparent="1" zPosition="-99" />
+    <widget name="menuimage" pixmap="maxHD/icons/tv.png" position="0,0" size="1,1" transparent="1" zPosition="-99" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_harddisk" position="0,0" size="1920,1080" title="Main menu">
     <eLabel backgroundColor="maxBackground" position="14,111" size="660,965" transparent="0" zPosition="-10" />
@@ -1024,7 +1024,7 @@
 				}
 			</convert>
     </widget>
-    <widget name="menuimage" position="0,0" size="1,1" transparent="1" zPosition="-99" />
+    <widget name="menuimage" pixmap="maxHD/icons/tv.png" position="0,0" size="1,1" transparent="1" zPosition="-99" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_setup" position="0,0" size="1920,1080" title="Main menu" transparent="0">
     <eLabel backgroundColor="maxBackground" position="14,111" size="660,965" transparent="0" zPosition="-10" />
@@ -1059,7 +1059,7 @@
 				}
 			</convert>
     </widget>
-    <widget name="menuimage" position="0,0" size="1,1" transparent="1" zPosition="-99" />
+    <widget name="menuimage" pixmap="maxHD/icons/tv.png" position="0,0" size="1,1" transparent="1" zPosition="-99" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_information" position="0,0" size="1920,1080" title="Main menu">
     <eLabel backgroundColor="maxBackground" position="14,110" size="855,168" transparent="0" zPosition="-10" />
@@ -1160,7 +1160,7 @@
     <widget source="session.CurrentService" render="Label" zPosition="6" position="135,1028" size="713,39" halign="left" valign="center" font="Regular; 30" transparent="1" foregroundColor="yellow1" backgroundColor="black">
       <convert type="ProgressDiskSpaceInfo">UsbInfo,Full</convert>
     </widget>
-    <widget name="menuimage" position="0,0" size="1,1" transparent="1" zPosition="-99" />
+    <widget name="menuimage" pixmap="maxHD/icons/tv.png" position="0,0" size="1,1" transparent="1" zPosition="-99" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_scan" position="0,0" size="1920,1080" title="Main menu">
     <eLabel backgroundColor="maxBackground" position="14,111" size="660,965" transparent="0" zPosition="-10" />
@@ -1195,7 +1195,7 @@
 				}
 			</convert>
     </widget>
-    <widget name="menuimage" position="0,0" size="1,1" transparent="1" zPosition="-99" />
+    <widget name="menuimage" pixmap="maxHD/icons/tv.png" position="0,0" size="1,1" transparent="1" zPosition="-99" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_mainmenu" position="0,0" size="1920,1080" title="Main menu" transparent="0">
     <eLabel backgroundColor="maxBackground" position="11,111" size="663,965" transparent="0" zPosition="-10" />
@@ -1231,7 +1231,7 @@
     <ePixmap alphatest="blend" pixmap="maxHD/line/line105.png" position="1470,918" size="2,158" zPosition="2" />
     <ePixmap alphatest="blend" pixmap="maxHD/line/line105.png" position="1907,918" size="2,158" zPosition="2" />
     <!--Uhr */-->
-    <widget name="menuimage" position="0,0" size="1,1" transparent="1" zPosition="-99" />
+    <widget name="menuimage" pixmap="maxHD/icons/tv.png" position="0,0" size="1,1" transparent="1" zPosition="-99" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_shutdown" position="0,0" size="1920,1080" title="Main menu">
     <eLabel backgroundColor="maxBackground" position="14,111" size="660,965" transparent="0" zPosition="-10" />
@@ -1266,7 +1266,7 @@
 				}
 			</convert>
     </widget>
-    <widget name="menuimage" position="0,0" size="1,1" transparent="1" zPosition="-99" />
+    <widget name="menuimage" pixmap="maxHD/icons/tv.png" position="0,0" size="1,1" transparent="1" zPosition="-99" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="About" position="0,0" size="1920,1080" title="About">
     <widget source="Title" render="Label" position="38,15" size="810,75" zPosition="1" halign="center" font="Regular; 68" backgroundColor="maxBackground" transparent="1" foregroundColor="maxBlueMax" />
